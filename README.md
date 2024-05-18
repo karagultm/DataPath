@@ -8,3 +8,10 @@ Instructions:
 * [ ] blezal
 * [ ] jalpc
 * [ ] baln
+
+
+Yapılacaklar:
+
+* [ ] Alu içinde N ve V flagleri güncellenicek
+  * [ ] design ve verilog gerek
+* [ ]
