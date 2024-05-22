@@ -1,9 +1,10 @@
-module alu32(sum,a,b,zout,gin, zStatus, nStatus, vStatus);//ALU operation according to the ALU control line values
+module alu32(sum,a,b,zout,gin, statusN,statusV,statusZ,clk);//ALU operation according to the ALU control line values
 
 output [31:0] sum;
 
 input [31:0] a,b; 
 input [3:0] gin;//ALU control line
+input clk;
 
 reg [31:0] sum;
 reg [31:0] less;
@@ -11,13 +12,21 @@ reg [31:0] less;
 output zout;
 reg zout;
 
-output zStatus, nStatus, vStatus;
-reg zStatus, nStatus, vStatus;
+output statusZ, statusN, statusV;
+reg tempZ, tempN, tempV;
+
 always @(a or b or gin)
 begin
+    // Initialize temporary status flags
+    tempZ = 0;
+    tempN = 0;
+    tempV = 0;
+
     case(gin)
     4'b0010: sum=a+b;         //ALU control line=0010, ADD
+			if ((a[31]&b[31]&(~sum[31]) )| ((~a[31])&(~b[31])&(sum[31]))) tempV=1;
     4'b0110: sum=a+1+(~b);    //ALU control line=0110, SUB
+			if ((a[31]&(~b[31])&(~sum[31])) | ((~a[31])&(b[31])&(sum[31]))) tempV=1;
     4'b0111: begin less=a+1+(~b);    //ALU control line=0111, set on less than
             if (less[31]) sum=1;
             else sum=0;
@@ -29,25 +38,20 @@ begin
 	4'b1000: sum=a           //ALU control line=1000, BRV
     default: sum=31'bx;
     endcase
+
+	// Set temporary flags based on the current operation
+    tempZ = (sum == 0) ? 1 : 0;
+    tempN = sum[31];
+
 zout=~(|sum);
 end
 
-always @(sum)
+always @(posedge clk)
 begin
-	if(sum==0)
-		zStatus=1;
-	else
-		zStatus=0;
-	if(a[31]&b[31]&(~sum[31])) // if a and b are negative and sum is positive
-		vStatus=1;
-
-	else if((~a[31])&(~b[31])&(sum[31]))  // if a and b are positive and sum is negative
-		vStatus=1;
-	else
-		vStatus=0;
-	
-
-
+	 // Update status flags at the positive edge of the clock
+    statusZ <= tempZ;
+    statusN <= tempN;
+    statusV <= tempV;
 end
 endmodule
 
