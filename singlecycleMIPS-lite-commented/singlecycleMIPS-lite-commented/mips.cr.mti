@@ -1,0 +1,79 @@
+C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/signext.v {1 {vlog -work work -stats=none C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/signext.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module signext
+
+Top level modules:
+	signext
+
+} {} {}} C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/alucont.v {1 {vlog -work work -stats=none C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/alucont.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module alucont
+
+Top level modules:
+	alucont
+
+} {} {}} C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/shift.v {1 {vlog -work work -stats=none C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/shift.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module shift
+
+Top level modules:
+	shift
+
+} {} {}} C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/alu32.v {1 {vlog -work work -stats=none C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/alu32.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module alu32
+
+Top level modules:
+	alu32
+
+} {} {}} C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/control.v {1 {vlog -work work -stats=none C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/control.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module control
+
+Top level modules:
+	control
+
+} {} {}} C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/zeroext.v {2 {vlog -work work -stats=none C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/zeroext.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module zeroext
+** Warning: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/zeroext.v(4): (vlog-2121) Illegal concatenation of an unsized constant. Will treat it as a 32-bit value.
+
+Top level modules:
+	zeroext
+
+} {} {}} C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult2_to_1_5.v {1 {vlog -work work -stats=none C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult2_to_1_5.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module mult2_to_1_5
+
+Top level modules:
+	mult2_to_1_5
+
+} {} {}} C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult2_to_1_32.v {1 {vlog -work work -stats=none C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult2_to_1_32.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module mult2_to_1_32
+
+Top level modules:
+	mult2_to_1_32
+
+} {} {}} C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult4_to_1_5.v {1 {vlog -work work -stats=none C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult4_to_1_5.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module mult4_to_1_5
+
+Top level modules:
+	mult4_to_1_5
+
+} {} {}} C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult4_to_1_32.v {1 {vlog -work work -stats=none C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult4_to_1_32.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module mult4_to_1_32
+
+Top level modules:
+	mult4_to_1_32
+
+} {} {}} C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/adder.v {1 {vlog -work work -stats=none C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/adder.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module adder
+
+Top level modules:
+	adder
+
+} {} {}}

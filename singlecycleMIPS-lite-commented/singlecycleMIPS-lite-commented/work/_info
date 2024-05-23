@@ -1,0 +1,287 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA/20.1
+vadder
+Z0 !s110 1716484065
+!i10b 1
+!s100 gWb<;Y:[8c^V3JALeYLDZ1
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IkU4IG@eGIRE6eI;R8dDPl1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dC:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented
+Z4 w1716036425
+8C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/adder.v
+FC:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/adder.v
+!i122 0
+Z5 L0 1 5
+Z6 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z7 !s108 1716484065.000000
+!s107 C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/adder.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/adder.v|
+!i113 1
+Z8 o-work work
+Z9 tCvgOpt 0
+valu32
+R0
+!i10b 1
+!s100 R><mnQinieIYUTIDEdfj:1
+R1
+IS`6T>W``V]R?Q63@0X8d?2
+R2
+R3
+w1716411003
+8C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/alu32.v
+FC:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/alu32.v
+!i122 1
+L0 1 61
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/alu32.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/alu32.v|
+!i113 1
+R8
+R9
+valucont
+R0
+!i10b 1
+!s100 ^bRSLliQP[fb4eCXRHb@c2
+R1
+Ik;ocTJJE0>jCc<VlHo`_D2
+R2
+R3
+Z10 w1716408226
+8C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/alucont.v
+FC:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/alucont.v
+!i122 2
+L0 1 24
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/alucont.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/alucont.v|
+!i113 1
+R8
+R9
+vcontrol
+R0
+!i10b 1
+!s100 V6VGigOFWCjB8eLM<g9>a0
+R1
+I`3f<5oAj[`ZL>cZoRR^S81
+R2
+R3
+R10
+8C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/control.v
+FC:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/control.v
+!i122 3
+L0 1 42
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/control.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/control.v|
+!i113 1
+R8
+R9
+vmult2_to_1_32
+R0
+!i10b 1
+!s100 Y_Id<LIRQ3DbCYAcIf6lb3
+R1
+I@i7N_E1zdP@0?fef8Yi<]0
+R2
+R3
+R4
+8C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult2_to_1_32.v
+FC:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult2_to_1_32.v
+!i122 5
+Z11 L0 1 6
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult2_to_1_32.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult2_to_1_32.v|
+!i113 1
+R8
+R9
+vmult2_to_1_5
+R0
+!i10b 1
+!s100 QeR<>khHHW047@W2MP@;I2
+R1
+IfB>ZJ7<3KAP:C1ZNMi6l51
+R2
+R3
+R4
+8C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult2_to_1_5.v
+FC:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult2_to_1_5.v
+!i122 4
+R11
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult2_to_1_5.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult2_to_1_5.v|
+!i113 1
+R8
+R9
+vmult4_to_1_32
+!s110 1716485544
+!i10b 1
+!s100 7^j8<EHDHQa9DBJmo3=kz3
+R1
+IQo@=2^kIKgE2zNCZd^7nI3
+R2
+R3
+w1716485528
+8C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult4_to_1_32.v
+FC:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult4_to_1_32.v
+!i122 11
+Z12 L0 1 10
+R6
+r1
+!s85 0
+31
+!s108 1716485544.000000
+!s107 C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult4_to_1_32.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult4_to_1_32.v|
+!i113 1
+R8
+R9
+vmult4_to_1_5
+!s110 1716485448
+!i10b 1
+!s100 d]g[ZoAYg>;<IN4jFXJbX0
+R1
+IJo46j`]Mi@aRjok^cYYF21
+R2
+R3
+w1716485374
+8C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult4_to_1_5.v
+FC:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult4_to_1_5.v
+!i122 10
+R12
+R6
+r1
+!s85 0
+31
+!s108 1716485448.000000
+!s107 C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult4_to_1_5.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult4_to_1_5.v|
+!i113 1
+R8
+R9
+vprocessor
+!s110 1716488269
+!i10b 1
+!s100 HIFKM]i71YX2NFMz758GV3
+R1
+IEQZ<5>dA>Z;O`J3FD_d<33
+R2
+R3
+w1716488260
+8C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v
+FC:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v
+!i122 12
+L0 1 201
+R6
+r1
+!s85 0
+31
+!s108 1716488268.000000
+!s107 C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v|
+!i113 1
+R8
+R9
+vshift
+R0
+!i10b 1
+!s100 XX2;Z1lf9Dd@dcO[G5lL:2
+R1
+I[6GO=3B9Mdado_?;f?QEH0
+R2
+R3
+R4
+8C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/shift.v
+FC:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/shift.v
+!i122 7
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/shift.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/shift.v|
+!i113 1
+R8
+R9
+vsignext
+Z13 !s110 1716484066
+!i10b 1
+!s100 aj?PFk=ka=A4[;Kz]?d6F3
+R1
+I_FhReO450;B4eKIcC6<9U3
+R2
+R3
+R4
+8C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/signext.v
+FC:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/signext.v
+!i122 8
+R5
+R6
+r1
+!s85 0
+31
+Z14 !s108 1716484066.000000
+!s107 C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/signext.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/signext.v|
+!i113 1
+R8
+R9
+vzeroext
+R13
+!i10b 1
+!s100 X=onVKP1VJ2]WhN6`566m1
+R1
+IEb1hlND3meETPDgGBBb5c0
+R2
+R3
+w1716375220
+8C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/zeroext.v
+FC:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/zeroext.v
+!i122 9
+R5
+R6
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/zeroext.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/zeroext.v|
+!i113 1
+R8
+R9

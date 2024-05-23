@@ -7,31 +7,72 @@ dataa,	//Read data 1 output of Register File
 datab,	//Read data 2 output of Register File
 out2,		//Output of mux with ALUSrc control-mult2
 out3,		//Output of mux with MemToReg control-mult3
-out4,		//Output of mux with (Branch&ALUZero) control-mult4
+out4, 		//Output of mux with (Branch&ALUZero) control-mult4
+out4_1, 		//Output of mux with (Branch&ALUZero) control-mult4
 sum,		//ALU result
-extad,	//Output of sign-extend unit
+extad,		//Output of sign-extend unit
+zextad,		//Output of zero-extend unit
 adder1out,	//Output of adder which adds PC and 4-add1
 adder2out,	//Output of adder which adds PC+4 and 2 shifted sign-extend result-add2
 sextad;	//Output of shift left 2 unit
 
-wire [5:0] inst31_26;	//31-26 bits of instruction
+wire [5:0] inst31_26;	//Opcode
 wire [4:0] 
-inst25_21,	//25-21 bits of instruction
-inst20_16,	//20-16 bits of instruction
-inst15_11,	//15-11 bits of instruction
+inst25_21,	//RS
+inst20_16,	//RT
+inst15_11,	//RD
+out1_1,     //first mux regdest and jmxorControl or balnControl
 out1;		//Write data input of Register File
 
-wire [15:0] inst15_0;	//15-0 bits of instruction
+wire [15:0] inst15_0;	//15-0 bits of instruction LABEL
 
 wire [31:0] instruc,	//current instruction
 dpack;	//Read data output of memory (data read from memory)
 
-wire [2:0] gout;	//Output of ALU control unit
+wire [3:0] gout;	//Output of ALU control unit
 
 wire zout,	//Zero output of ALU
-pcsrc,	//Output of AND gate with Branch and ZeroOut inputs
+statusZ, statusV, statusN, //status reg flags
 //Control signals
-regdest,alusrc,memtoreg,regwrite,memread,memwrite,branch,aluop1,aluop0;
+regdest,alusrc,memtoreg,regwrite,memread,memwrite,branch,aluop1,aluop0,
+noriControl, blezalControl, balnControl, jalpcControl, brvControl, jmxorControl; // new instruction controls
+
+// jmxorControl or balnControl
+wire jmxorcORbalcc;
+assign jmxorcORbalcc = jmxorControl | balnControl;
+
+//jmxorrControl or blezalControl or jalpcControl
+wire jmxorcORblezalORjalpc;
+assign jmxorcORblezalORjalpc = jmxorControl | blezalControl | jalpcControl;
+
+//statusz or statusn
+wire statuszORstatusn;
+assign statuszORstatusn = statusZ | statusN;
+
+//blezalControl and statuszORstatusn
+wire blezalANDstatuszORstatusn;
+assign blezalANDstatuszORstatusn = blezalControl & statuszORstatusn;
+
+//statusV and brvControl
+wire statusvANDbrv;
+assign statusvANDbrv = statusV & brvControl;
+
+//jmxor or statusvANDbrv
+wire pcsrc1;
+assign pcsrc1= jmxorControl | statusvANDbrv;
+
+//branch and zout
+wire branchANDzout;
+assign branchANDzout=branch && zout; 
+
+//branchandzout or jalpcControl or blezalANDstatuszORstatusn
+wire pcsrc0;
+assign pcsrc0 = branchANDzout | jalpcControl | blezalANDstatuszORstatusn;
+
+//statusn and balnControl
+wire statusnANDbaln;
+assign statusnANDbaln = statusN & balnControl; 
+
 
 //32-size register file (32 bit(1 word) for each register)
 reg [31:0] registerfile[0:31];
@@ -71,18 +112,30 @@ always @(posedge clk)
 //read data from memory, sum stores address
 assign dpack={datmem[sum[5:0]],datmem[sum[5:0]+1],datmem[sum[5:0]+2],datmem[sum[5:0]+3]};
 
+/////////////////////////
 //multiplexers
-//mux with RegDst control
-mult2_to_1_5  mult1(out1, instruc[20:16],instruc[15:11],regdest);
+
+//mux with RegDst control and (jmxorControl or balnControl)
+wire thirtyone;
+assign thirtyone=5'b11111;
+mult4_to_1_5  mult1(out1_1, instruc[20:16],instruc[15:11],thirtyone,thirtyone,regdest,jmxorcORbalcc);
+
+//mux blezalControl 
+wire twentyfive;
+assign twentyfive=5'b11001;
+mult2_to_1_5 mult5(out1, out1_1, twentyfive, blezalControl);
 
 //mux with ALUSrc control
-mult2_to_1_32 mult2(out2, datab,extad,alusrc);
+mult4_to_1_32 mult2(out2, datab,extad,zextad, zextad, alusrc, noriControl);
 
 //mux with MemToReg control
-mult2_to_1_32 mult3(out3, sum,dpack,memtoreg);
+mult4_to_1_32 mult3(out3, sum,dpack,adder1out,adder1out,memtoreg,jmxorcORblezalORjalpc);
 
 //mux with (Branch&ALUZero) control
-mult2_to_1_32 mult4(out4, adder1out,adder2out,pcsrc);
+mult4_to_1_32 mult4(out4_1, adder1out,adder2out,sum, sum ,pcsrc0, pcsrc1);
+
+// mux for baln 
+mult2_to_1_32 mult6(out4, out4_1, /* */ ,statusnANDbaln);
 
 // load pc
 always @(negedge clk)
@@ -91,7 +144,7 @@ pc=out4;
 // alu, adder and control logic connections
 
 //ALU unit
-alu32 alu1(sum,dataa,out2,zout,gout);
+alu32 alu1(sum,dataa,out2,zout,gout, statusN,statusV,statusZ,clk);
 
 //adder which adds PC and 4
 adder add1(pc,32'h4,adder1out);
@@ -105,6 +158,7 @@ aluop1,aluop0);
 
 //Sign extend unit
 signext sext(instruc[15:0],extad);
+zeroext zext(instruc[15:0],zextad);
 
 //ALU control unit
 alucont acont(aluop1,aluop0,instruc[3],instruc[2], instruc[1], instruc[0] ,gout);
@@ -112,8 +166,7 @@ alucont acont(aluop1,aluop0,instruc[3],instruc[2], instruc[1], instruc[0] ,gout)
 //Shift-left 2 unit
 shift shift2(sextad,extad);
 
-//AND gate
-assign pcsrc=branch && zout; 
+
 
 //initialize datamemory,instruction memory and registers
 //read initial data from files given in hex
