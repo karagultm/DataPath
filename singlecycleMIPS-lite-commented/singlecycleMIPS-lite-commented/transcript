@@ -8,159 +8,79 @@
 # Compile of shift.v was successful.
 # Compile of signext.v was successful.
 # Compile of zeroext.v was successful with warnings.
-# 10 compiles, 0 failed with no errors.
+# Compile of mult4_to_1_5.v was successful.
+# Compile of mult4_to_1_32.v was successful.
+# 12 compiles, 0 failed with no errors.
 vsim -gui work.processor
 # vsim -gui work.processor 
-# Start time: 20:15:13 on May 23,2024
+# Start time: 22:22:41 on May 23,2024
 # Loading work.processor
+# Loading work.mult4_to_1_5
 # Loading work.mult2_to_1_5
+# Loading work.mult4_to_1_32
 # Loading work.mult2_to_1_32
 # Loading work.alu32
 # Loading work.adder
 # Loading work.control
 # Loading work.signext
+# Loading work.zeroext
 # Loading work.alucont
 # Loading work.shift
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'alu1'.  Expected 9, found 5.
-#    Time: 0 ps  Iteration: 0  Instance: /processor/alu1 File: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v Line: 94
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (3) for port 'gin'. The port definition is at: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/alu32.v(1).
-#    Time: 0 ps  Iteration: 0  Instance: /processor/alu1 File: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v Line: 94
-# ** Warning: (vsim-3722) C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v(94): [TFMPC] - Missing connection for port 'statusN'.
-# ** Warning: (vsim-3722) C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v(94): [TFMPC] - Missing connection for port 'statusV'.
-# ** Warning: (vsim-3722) C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v(94): [TFMPC] - Missing connection for port 'statusZ'.
-# ** Warning: (vsim-3722) C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v(94): [TFMPC] - Missing connection for port 'clk'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'i2'. The port definition is at: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult4_to_1_5.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processor/mult1 File: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v Line: 138
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'i3'. The port definition is at: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult4_to_1_5.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processor/mult1 File: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v Line: 138
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'i1'. The port definition is at: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult2_to_1_5.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processor/mult5 File: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v Line: 143
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'i1'. The port definition is at: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult2_to_1_32.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processor/mult6 File: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v Line: 155
 # ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'cont'.  Expected 17, found 10.
-#    Time: 0 ps  Iteration: 0  Instance: /processor/cont File: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v Line: 103
+#    Time: 0 ps  Iteration: 0  Instance: /processor/cont File: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v Line: 173
 # ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (1) for port 'func'. The port definition is at: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/control.v(1).
-#    Time: 0 ps  Iteration: 0  Instance: /processor/cont File: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v Line: 103
-# ** Warning: (vsim-3722) C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v(103): [TFMPC] - Missing connection for port 'aluop2'.
-# ** Warning: (vsim-3722) C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v(103): [TFMPC] - Missing connection for port 'brvControl'.
-# ** Warning: (vsim-3722) C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v(103): [TFMPC] - Missing connection for port 'jmxorControl'.
-# ** Warning: (vsim-3722) C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v(103): [TFMPC] - Missing connection for port 'jalpcControl'.
-# ** Warning: (vsim-3722) C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v(103): [TFMPC] - Missing connection for port 'balnControl'.
-# ** Warning: (vsim-3722) C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v(103): [TFMPC] - Missing connection for port 'blezalControl'.
-# ** Warning: (vsim-3722) C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v(103): [TFMPC] - Missing connection for port 'noriControl'.
+#    Time: 0 ps  Iteration: 0  Instance: /processor/cont File: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v Line: 173
+# ** Warning: (vsim-3722) C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v(173): [TFMPC] - Missing connection for port 'aluop2'.
+# ** Warning: (vsim-3722) C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v(173): [TFMPC] - Missing connection for port 'brvControl'.
+# ** Warning: (vsim-3722) C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v(173): [TFMPC] - Missing connection for port 'jmxorControl'.
+# ** Warning: (vsim-3722) C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v(173): [TFMPC] - Missing connection for port 'jalpcControl'.
+# ** Warning: (vsim-3722) C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v(173): [TFMPC] - Missing connection for port 'balnControl'.
+# ** Warning: (vsim-3722) C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v(173): [TFMPC] - Missing connection for port 'blezalControl'.
+# ** Warning: (vsim-3722) C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v(173): [TFMPC] - Missing connection for port 'noriControl'.
 # ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'acont'.  Expected 9, found 7.
-#    Time: 0 ps  Iteration: 0  Instance: /processor/acont File: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v Line: 110
-# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (3) for port 'f1'. The port definition is at: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/alucont.v(1).
-#    Time: 0 ps  Iteration: 0  Instance: /processor/acont File: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v Line: 110
-# ** Warning: (vsim-3722) C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v(110): [TFMPC] - Missing connection for port 'f0'.
-# ** Warning: (vsim-3722) C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v(110): [TFMPC] - Missing connection for port 'gout'.
-step -over
-step -over
-step -over
-step -over
-step -over
-step -over
-step -over
-step -over
-step -over
-step -over
-step -over
-step -over
-step -over
-step -over
-step -over
-step -over
-step -over
-step -over
-step -over
-step -over
-step -over
-step -over
-step -over
-step -over
-step -over
-step -over
-step -over
-step -over
-step -over
-step -over
-step -over
-step -over
-step -over
-step -over
-step -over
-step -over
-step -over
-step -over
-step -over
-step -over
-step -over
-step -over
-step -over
-step -over
-step -over
-step -over
-step -over
-step -over
-step -over
-# Instruction Memory[0]= 22  Data Memory[0]= 00   Register[0]= 00000000
-step -over
-step -over
-# Instruction Memory[1]= 10  Data Memory[1]= 00   Register[1]= 00000014
-step -over
-step -over
-# Instruction Memory[2]= 00  Data Memory[2]= 00   Register[2]= 00000040
-step -over
-step -over
-# Instruction Memory[3]= 00  Data Memory[3]= 01   Register[3]= 00000060
-step -over
-step -over
-# Instruction Memory[4]= 00  Data Memory[4]= 00   Register[4]= 00000010
-step -over
-step -over
-# Instruction Memory[5]= 01  Data Memory[5]= 00   Register[5]= 00000030
-step -over
-step -over
-# Instruction Memory[6]= xx  Data Memory[6]= 00   Register[6]= 00000032
-step -over
-step -over
-# Instruction Memory[7]= xx  Data Memory[7]= 05   Register[7]= 00000042
-step -over
-step -over
-# Instruction Memory[8]= xx  Data Memory[8]= 00   Register[8]= 00000014
-step -over
-step -over
-# Instruction Memory[9]= xx  Data Memory[9]= 00   Register[9]= 00000028
-step -over
-step -over
-# Instruction Memory[10]= xx  Data Memory[10]= 00   Register[10]= xxxxxxxx
-step -over
-step -over
-# Instruction Memory[11]= xx  Data Memory[11]= 10   Register[11]= xxxxxxxx
-step -over
-step -over
-# Instruction Memory[12]= xx  Data Memory[12]= 00   Register[12]= xxxxxxxx
-step -over
-step -over
-# Instruction Memory[13]= xx  Data Memory[13]= 00   Register[13]= xxxxxxxx
-step -over
-step -over
-# Instruction Memory[14]= xx  Data Memory[14]= 01   Register[14]= xxxxxxxx
-step -over
-step -over
-# Instruction Memory[15]= xx  Data Memory[15]= 00   Register[15]= xxxxxxxx
-step -over
-step -over
-# Instruction Memory[16]= xx  Data Memory[16]= 00   Register[16]= xxxxxxxx
-step -over
-step -over
-# Instruction Memory[17]= xx  Data Memory[17]= 00   Register[17]= xxxxxxxx
-step -over
-step -over
-# Instruction Memory[18]= xx  Data Memory[18]= 01   Register[18]= xxxxxxxx
-step -over
-step -over
-# Instruction Memory[19]= xx  Data Memory[19]= 10   Register[19]= xxxxxxxx
-step -over
-step -over
-# Instruction Memory[20]= xx  Data Memory[20]= 00   Register[20]= xxxxxxxx
-step -over
-step -over
-# Instruction Memory[21]= xx  Data Memory[21]= 00   Register[21]= xxxxxxxx
-# Compile of mult4_to_1_5.v was successful.
-# Compile of mult4_to_1_32.v was successful.
-# Compile of processor.v failed with 3 errors.
-# Compile of processor.v failed with 2 errors.
-# Compile of processor.v was successful.
+#    Time: 0 ps  Iteration: 0  Instance: /processor/acont File: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v Line: 181
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (4) for port 'f1'. The port definition is at: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/alucont.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processor/acont File: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v Line: 181
+# ** Warning: (vsim-3722) C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v(181): [TFMPC] - Missing connection for port 'f0'.
+# ** Warning: (vsim-3722) C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v(181): [TFMPC] - Missing connection for port 'gout'.
+run
+# Instruction Memory[0]= 22  Data Memory[0]= xx   Register[0]= xxxxxxxx
+# Instruction Memory[1]= 10  Data Memory[1]= xx   Register[1]= xxxxxxxx
+# Instruction Memory[2]= 00  Data Memory[2]= xx   Register[2]= xxxxxxxx
+# Instruction Memory[3]= 00  Data Memory[3]= xx   Register[3]= xxxxxxxx
+# Instruction Memory[4]= 00  Data Memory[4]= xx   Register[4]= xxxxxxxx
+# Instruction Memory[5]= 01  Data Memory[5]= xx   Register[5]= xxxxxxxx
+# Instruction Memory[6]= xx  Data Memory[6]= xx   Register[6]= xxxxxxxx
+# Instruction Memory[7]= xx  Data Memory[7]= xx   Register[7]= xxxxxxxx
+# Instruction Memory[8]= xx  Data Memory[8]= xx   Register[8]= xxxxxxxx
+# Instruction Memory[9]= xx  Data Memory[9]= xx   Register[9]= xxxxxxxx
+# Instruction Memory[10]= xx  Data Memory[10]= xx   Register[10]= xxxxxxxx
+# Instruction Memory[11]= xx  Data Memory[11]= xx   Register[11]= xxxxxxxx
+# Instruction Memory[12]= xx  Data Memory[12]= xx   Register[12]= xxxxxxxx
+# Instruction Memory[13]= xx  Data Memory[13]= xx   Register[13]= xxxxxxxx
+# Instruction Memory[14]= xx  Data Memory[14]= xx   Register[14]= xxxxxxxx
+# Instruction Memory[15]= xx  Data Memory[15]= xx   Register[15]= xxxxxxxx
+# Instruction Memory[16]= xx  Data Memory[16]= xx   Register[16]= xxxxxxxx
+# Instruction Memory[17]= xx  Data Memory[17]= xx   Register[17]= xxxxxxxx
+# Instruction Memory[18]= xx  Data Memory[18]= xx   Register[18]= xxxxxxxx
+# Instruction Memory[19]= xx  Data Memory[19]= xx   Register[19]= xxxxxxxx
+# Instruction Memory[20]= xx  Data Memory[20]= xx   Register[20]= xxxxxxxx
+# Instruction Memory[21]= xx  Data Memory[21]= xx   Register[21]= xxxxxxxx
+# Instruction Memory[22]= xx  Data Memory[22]= xx   Register[22]= xxxxxxxx
+# Instruction Memory[23]= xx  Data Memory[23]= xx   Register[23]= xxxxxxxx
+# Instruction Memory[24]= xx  Data Memory[24]= xx   Register[24]= xxxxxxxx
+# Instruction Memory[25]= xx  Data Memory[25]= xx   Register[25]= xxxxxxxx
+# Instruction Memory[26]= xx  Data Memory[26]= xx   Register[26]= xxxxxxxx
+# Instruction Memory[27]= xx  Data Memory[27]= xx   Register[27]= xxxxxxxx
+# Instruction Memory[28]= xx  Data Memory[28]= xx   Register[28]= xxxxxxxx
+# Instruction Memory[29]= xx  Data Memory[29]= xx   Register[29]= xxxxxxxx
+# Instruction Memory[30]= xx  Data Memory[30]= xx   Register[30]= xxxxxxxx
+#                    0PC xxxxxxxx  SUM xxxxxxxx   INST xxxxxxxx   REGISTER xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx 
