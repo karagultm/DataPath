@@ -31,6 +31,8 @@ dpack;	//Read data output of memory (data read from memory)
 
 wire [3:0] gout;	//Output of ALU control unit
 
+wire [25:0] j_type_address; //J type address
+
 wire zout,	//Zero output of ALU
 statusZ, statusV, statusN, //status reg flags
 //Control signals
@@ -102,6 +104,21 @@ end
  assign inst15_0=instruc[15:0];
 
 
+// Baln operation
+//
+// 	(PC+4) [31:28] + Label [27:2] + [00]
+//
+
+wire [3:0] first4BitsOfPC;
+wire [32:0] labelAddress;
+wire [27:0] extendedLabelAddress;
+assign first4BitsOfPC = adder1out[31:28];
+
+assign extendedLabelAddress = {labelAddress, 2'b00};
+assign labelAddress = {first4BitsOfPC,extendedLabelAddress};
+
+
+
 // registers
 
 assign dataa=registerfile[inst25_21];//Read register 1
@@ -135,7 +152,7 @@ mult4_to_1_32 mult3(out3, sum,dpack,adder1out,adder1out,memtoreg,jmxorcORblezalO
 mult4_to_1_32 mult4(out4_1, adder1out,adder2out,sum, sum ,pcsrc0, pcsrc1);
 
 // mux for baln 
-mult2_to_1_32 mult6(out4, out4_1, /* */ ,statusnANDbaln);
+mult2_to_1_32 mult6(out4, out4_1, labelAddress ,statusnANDbaln); // added LabelAddress
 
 // load pc
 always @(negedge clk)
