@@ -13,7 +13,7 @@
 # 12 compiles, 0 failed with no errors.
 vsim -gui work.processor
 # vsim -gui work.processor 
-# Start time: 22:22:41 on May 23,2024
+# Start time: 23:01:00 on May 23,2024
 # Loading work.processor
 # Loading work.mult4_to_1_5
 # Loading work.mult2_to_1_5
@@ -34,35 +34,25 @@ vsim -gui work.processor
 #    Time: 0 ps  Iteration: 0  Instance: /processor/mult5 File: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v Line: 143
 # ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'i1'. The port definition is at: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult2_to_1_32.v(1).
 #    Time: 0 ps  Iteration: 0  Instance: /processor/mult6 File: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v Line: 155
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'cont'.  Expected 17, found 10.
-#    Time: 0 ps  Iteration: 0  Instance: /processor/cont File: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v Line: 173
-# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (1) for port 'func'. The port definition is at: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/control.v(1).
-#    Time: 0 ps  Iteration: 0  Instance: /processor/cont File: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v Line: 173
-# ** Warning: (vsim-3722) C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v(173): [TFMPC] - Missing connection for port 'aluop2'.
-# ** Warning: (vsim-3722) C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v(173): [TFMPC] - Missing connection for port 'brvControl'.
-# ** Warning: (vsim-3722) C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v(173): [TFMPC] - Missing connection for port 'jmxorControl'.
-# ** Warning: (vsim-3722) C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v(173): [TFMPC] - Missing connection for port 'jalpcControl'.
-# ** Warning: (vsim-3722) C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v(173): [TFMPC] - Missing connection for port 'balnControl'.
-# ** Warning: (vsim-3722) C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v(173): [TFMPC] - Missing connection for port 'blezalControl'.
-# ** Warning: (vsim-3722) C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v(173): [TFMPC] - Missing connection for port 'noriControl'.
 # ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'acont'.  Expected 9, found 7.
 #    Time: 0 ps  Iteration: 0  Instance: /processor/acont File: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v Line: 181
 # ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (4) for port 'f1'. The port definition is at: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/alucont.v(1).
 #    Time: 0 ps  Iteration: 0  Instance: /processor/acont File: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v Line: 181
 # ** Warning: (vsim-3722) C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v(181): [TFMPC] - Missing connection for port 'f0'.
 # ** Warning: (vsim-3722) C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v(181): [TFMPC] - Missing connection for port 'gout'.
+# WARNING: No extended dataflow license exists
 run
-# Instruction Memory[0]= 22  Data Memory[0]= xx   Register[0]= xxxxxxxx
-# Instruction Memory[1]= 10  Data Memory[1]= xx   Register[1]= xxxxxxxx
-# Instruction Memory[2]= 00  Data Memory[2]= xx   Register[2]= xxxxxxxx
-# Instruction Memory[3]= 00  Data Memory[3]= xx   Register[3]= xxxxxxxx
-# Instruction Memory[4]= 00  Data Memory[4]= xx   Register[4]= xxxxxxxx
-# Instruction Memory[5]= 01  Data Memory[5]= xx   Register[5]= xxxxxxxx
-# Instruction Memory[6]= xx  Data Memory[6]= xx   Register[6]= xxxxxxxx
-# Instruction Memory[7]= xx  Data Memory[7]= xx   Register[7]= xxxxxxxx
-# Instruction Memory[8]= xx  Data Memory[8]= xx   Register[8]= xxxxxxxx
-# Instruction Memory[9]= xx  Data Memory[9]= xx   Register[9]= xxxxxxxx
-# Instruction Memory[10]= xx  Data Memory[10]= xx   Register[10]= xxxxxxxx
+# Instruction Memory[0]= 00  Data Memory[0]= xx   Register[0]= 00000000
+# Instruction Memory[1]= 00  Data Memory[1]= xx   Register[1]= 00000000
+# Instruction Memory[2]= 00  Data Memory[2]= xx   Register[2]= 00000000
+# Instruction Memory[3]= 00  Data Memory[3]= xx   Register[3]= 00000000
+# Instruction Memory[4]= 02  Data Memory[4]= xx   Register[4]= 00000000
+# Instruction Memory[5]= 10  Data Memory[5]= xx   Register[5]= 00000000
+# Instruction Memory[6]= 82  Data Memory[6]= xx   Register[6]= 00000000
+# Instruction Memory[7]= 20  Data Memory[7]= xx   Register[7]= 00000000
+# Instruction Memory[8]= xx  Data Memory[8]= xx   Register[8]= 00000000
+# Instruction Memory[9]= xx  Data Memory[9]= xx   Register[9]= 00000000
+# Instruction Memory[10]= xx  Data Memory[10]= xx   Register[10]= 00000000
 # Instruction Memory[11]= xx  Data Memory[11]= xx   Register[11]= xxxxxxxx
 # Instruction Memory[12]= xx  Data Memory[12]= xx   Register[12]= xxxxxxxx
 # Instruction Memory[13]= xx  Data Memory[13]= xx   Register[13]= xxxxxxxx
@@ -83,4 +73,697 @@ run
 # Instruction Memory[28]= xx  Data Memory[28]= xx   Register[28]= xxxxxxxx
 # Instruction Memory[29]= xx  Data Memory[29]= xx   Register[29]= xxxxxxxx
 # Instruction Memory[30]= xx  Data Memory[30]= xx   Register[30]= xxxxxxxx
-#                    0PC xxxxxxxx  SUM xxxxxxxx   INST xxxxxxxx   REGISTER xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx 
+#                    0PC 00000004  SUM Xxxxxxxx   INST 02108220   REGISTER 00000000 00000000 00000000 00000000 
+# Compile of adder.v was successful.
+# Compile of alu32.v was successful.
+# Compile of alucont.v was successful.
+# Compile of control.v was successful.
+# Compile of mult2_to_1_5.v was successful.
+# Compile of mult2_to_1_32.v was successful.
+# Compile of processor.v was successful.
+# Compile of shift.v was successful.
+# Compile of signext.v was successful.
+# Compile of zeroext.v was successful with warnings.
+# Compile of mult4_to_1_5.v was successful.
+# Compile of mult4_to_1_32.v was successful.
+# 12 compiles, 0 failed with no errors.
+vsim -gui work.processor
+# End time: 23:06:22 on May 23,2024, Elapsed time: 0:05:22
+# Errors: 0, Warnings: 11
+# vsim -gui work.processor 
+# Start time: 23:06:22 on May 23,2024
+# Loading work.processor
+# Loading work.mult4_to_1_5
+# Loading work.mult2_to_1_5
+# Loading work.mult4_to_1_32
+# Loading work.mult2_to_1_32
+# Loading work.alu32
+# Loading work.adder
+# Loading work.control
+# Loading work.signext
+# Loading work.zeroext
+# Loading work.alucont
+# Loading work.shift
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'i2'. The port definition is at: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult4_to_1_5.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processor/mult1 File: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v Line: 138
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'i3'. The port definition is at: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult4_to_1_5.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processor/mult1 File: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v Line: 138
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'i1'. The port definition is at: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult2_to_1_5.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processor/mult5 File: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v Line: 143
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'i1'. The port definition is at: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult2_to_1_32.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processor/mult6 File: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v Line: 155
+run
+# Instruction Memory[0]= 00  Data Memory[0]= xx   Register[0]= 00000000
+# Instruction Memory[1]= 00  Data Memory[1]= xx   Register[1]= 00000000
+# Instruction Memory[2]= 00  Data Memory[2]= xx   Register[2]= 00000000
+# Instruction Memory[3]= 00  Data Memory[3]= xx   Register[3]= 00000000
+# Instruction Memory[4]= 02  Data Memory[4]= xx   Register[4]= 00000000
+# Instruction Memory[5]= 10  Data Memory[5]= xx   Register[5]= 00000000
+# Instruction Memory[6]= 82  Data Memory[6]= xx   Register[6]= 00000000
+# Instruction Memory[7]= 20  Data Memory[7]= xx   Register[7]= 00000000
+# Instruction Memory[8]= xx  Data Memory[8]= xx   Register[8]= 00000000
+# Instruction Memory[9]= xx  Data Memory[9]= xx   Register[9]= 00000000
+# Instruction Memory[10]= xx  Data Memory[10]= xx   Register[10]= 00000000
+# Instruction Memory[11]= xx  Data Memory[11]= xx   Register[11]= xxxxxxxx
+# Instruction Memory[12]= xx  Data Memory[12]= xx   Register[12]= xxxxxxxx
+# Instruction Memory[13]= xx  Data Memory[13]= xx   Register[13]= xxxxxxxx
+# Instruction Memory[14]= xx  Data Memory[14]= xx   Register[14]= xxxxxxxx
+# Instruction Memory[15]= xx  Data Memory[15]= xx   Register[15]= xxxxxxxx
+# Instruction Memory[16]= xx  Data Memory[16]= xx   Register[16]= xxxxxxxx
+# Instruction Memory[17]= xx  Data Memory[17]= xx   Register[17]= xxxxxxxx
+# Instruction Memory[18]= xx  Data Memory[18]= xx   Register[18]= xxxxxxxx
+# Instruction Memory[19]= xx  Data Memory[19]= xx   Register[19]= xxxxxxxx
+# Instruction Memory[20]= xx  Data Memory[20]= xx   Register[20]= xxxxxxxx
+# Instruction Memory[21]= xx  Data Memory[21]= xx   Register[21]= xxxxxxxx
+# Instruction Memory[22]= xx  Data Memory[22]= xx   Register[22]= xxxxxxxx
+# Instruction Memory[23]= xx  Data Memory[23]= xx   Register[23]= xxxxxxxx
+# Instruction Memory[24]= xx  Data Memory[24]= xx   Register[24]= xxxxxxxx
+# Instruction Memory[25]= xx  Data Memory[25]= xx   Register[25]= xxxxxxxx
+# Instruction Memory[26]= xx  Data Memory[26]= xx   Register[26]= xxxxxxxx
+# Instruction Memory[27]= xx  Data Memory[27]= xx   Register[27]= xxxxxxxx
+# Instruction Memory[28]= xx  Data Memory[28]= xx   Register[28]= xxxxxxxx
+# Instruction Memory[29]= xx  Data Memory[29]= xx   Register[29]= xxxxxxxx
+# Instruction Memory[30]= xx  Data Memory[30]= xx   Register[30]= xxxxxxxx
+#                    0PC 00000004  SUM xxxxxxxx   INST 02108220   REGISTER 00000000 00000000 00000000 00000000 
+run
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'i2'. The port definition is at: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult4_to_1_5.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processor/mult1 File: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v Line: 138
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'i3'. The port definition is at: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult4_to_1_5.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processor/mult1 File: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v Line: 138
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'i1'. The port definition is at: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult2_to_1_5.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processor/mult5 File: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v Line: 143
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'i1'. The port definition is at: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult2_to_1_32.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processor/mult6 File: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v Line: 155
+run
+# Instruction Memory[0]= 00  Data Memory[0]= xx   Register[0]= 00000000
+# Instruction Memory[1]= 00  Data Memory[1]= xx   Register[1]= 00000000
+# Instruction Memory[2]= 00  Data Memory[2]= xx   Register[2]= 00000000
+# Instruction Memory[3]= 00  Data Memory[3]= xx   Register[3]= 00000000
+# Instruction Memory[4]= 02  Data Memory[4]= xx   Register[4]= 00000000
+# Instruction Memory[5]= 10  Data Memory[5]= xx   Register[5]= 00000000
+# Instruction Memory[6]= 82  Data Memory[6]= xx   Register[6]= 00000000
+# Instruction Memory[7]= 20  Data Memory[7]= xx   Register[7]= 00000000
+# Instruction Memory[8]= xx  Data Memory[8]= xx   Register[8]= 00000000
+# Instruction Memory[9]= xx  Data Memory[9]= xx   Register[9]= 00000000
+# Instruction Memory[10]= xx  Data Memory[10]= xx   Register[10]= 00000000
+# Instruction Memory[11]= xx  Data Memory[11]= xx   Register[11]= xxxxxxxx
+# Instruction Memory[12]= xx  Data Memory[12]= xx   Register[12]= xxxxxxxx
+# Instruction Memory[13]= xx  Data Memory[13]= xx   Register[13]= xxxxxxxx
+# Instruction Memory[14]= xx  Data Memory[14]= xx   Register[14]= xxxxxxxx
+# Instruction Memory[15]= xx  Data Memory[15]= xx   Register[15]= xxxxxxxx
+# Instruction Memory[16]= xx  Data Memory[16]= xx   Register[16]= xxxxxxxx
+# Instruction Memory[17]= xx  Data Memory[17]= xx   Register[17]= xxxxxxxx
+# Instruction Memory[18]= xx  Data Memory[18]= xx   Register[18]= xxxxxxxx
+# Instruction Memory[19]= xx  Data Memory[19]= xx   Register[19]= xxxxxxxx
+# Instruction Memory[20]= xx  Data Memory[20]= xx   Register[20]= xxxxxxxx
+# Instruction Memory[21]= xx  Data Memory[21]= xx   Register[21]= xxxxxxxx
+# Instruction Memory[22]= xx  Data Memory[22]= xx   Register[22]= xxxxxxxx
+# Instruction Memory[23]= xx  Data Memory[23]= xx   Register[23]= xxxxxxxx
+# Instruction Memory[24]= xx  Data Memory[24]= xx   Register[24]= xxxxxxxx
+# Instruction Memory[25]= xx  Data Memory[25]= xx   Register[25]= xxxxxxxx
+# Instruction Memory[26]= xx  Data Memory[26]= xx   Register[26]= xxxxxxxx
+# Instruction Memory[27]= xx  Data Memory[27]= xx   Register[27]= xxxxxxxx
+# Instruction Memory[28]= xx  Data Memory[28]= xx   Register[28]= xxxxxxxx
+# Instruction Memory[29]= xx  Data Memory[29]= xx   Register[29]= xxxxxxxx
+# Instruction Memory[30]= xx  Data Memory[30]= xx   Register[30]= xxxxxxxx
+#                    0PC 00000004  SUM xxxxxxxx   INST 02108220   REGISTER 00000000 00000000 00000000 00000000 
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'i2'. The port definition is at: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult4_to_1_5.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processor/mult1 File: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v Line: 138
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'i3'. The port definition is at: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult4_to_1_5.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processor/mult1 File: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v Line: 138
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'i1'. The port definition is at: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult2_to_1_5.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processor/mult5 File: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v Line: 143
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'i1'. The port definition is at: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult2_to_1_32.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processor/mult6 File: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v Line: 155
+run
+# Instruction Memory[0]= 00  Data Memory[0]= xx   Register[0]= 00000000
+# Instruction Memory[1]= 00  Data Memory[1]= xx   Register[1]= 00000000
+# Instruction Memory[2]= 00  Data Memory[2]= xx   Register[2]= 00000000
+# Instruction Memory[3]= 00  Data Memory[3]= xx   Register[3]= 00000000
+# Instruction Memory[4]= 02  Data Memory[4]= xx   Register[4]= 00000000
+# Instruction Memory[5]= 10  Data Memory[5]= xx   Register[5]= 00000000
+# Instruction Memory[6]= 82  Data Memory[6]= xx   Register[6]= 00000000
+# Instruction Memory[7]= 20  Data Memory[7]= xx   Register[7]= 00000000
+# Instruction Memory[8]= xx  Data Memory[8]= xx   Register[8]= 00000000
+# Instruction Memory[9]= xx  Data Memory[9]= xx   Register[9]= 00000000
+# Instruction Memory[10]= xx  Data Memory[10]= xx   Register[10]= 00000000
+# Instruction Memory[11]= xx  Data Memory[11]= xx   Register[11]= xxxxxxxx
+# Instruction Memory[12]= xx  Data Memory[12]= xx   Register[12]= xxxxxxxx
+# Instruction Memory[13]= xx  Data Memory[13]= xx   Register[13]= xxxxxxxx
+# Instruction Memory[14]= xx  Data Memory[14]= xx   Register[14]= xxxxxxxx
+# Instruction Memory[15]= xx  Data Memory[15]= xx   Register[15]= xxxxxxxx
+# Instruction Memory[16]= xx  Data Memory[16]= xx   Register[16]= xxxxxxxx
+# Instruction Memory[17]= xx  Data Memory[17]= xx   Register[17]= xxxxxxxx
+# Instruction Memory[18]= xx  Data Memory[18]= xx   Register[18]= xxxxxxxx
+# Instruction Memory[19]= xx  Data Memory[19]= xx   Register[19]= xxxxxxxx
+# Instruction Memory[20]= xx  Data Memory[20]= xx   Register[20]= xxxxxxxx
+# Instruction Memory[21]= xx  Data Memory[21]= xx   Register[21]= xxxxxxxx
+# Instruction Memory[22]= xx  Data Memory[22]= xx   Register[22]= xxxxxxxx
+# Instruction Memory[23]= xx  Data Memory[23]= xx   Register[23]= xxxxxxxx
+# Instruction Memory[24]= xx  Data Memory[24]= xx   Register[24]= xxxxxxxx
+# Instruction Memory[25]= xx  Data Memory[25]= xx   Register[25]= xxxxxxxx
+# Instruction Memory[26]= xx  Data Memory[26]= xx   Register[26]= xxxxxxxx
+# Instruction Memory[27]= xx  Data Memory[27]= xx   Register[27]= xxxxxxxx
+# Instruction Memory[28]= xx  Data Memory[28]= xx   Register[28]= xxxxxxxx
+# Instruction Memory[29]= xx  Data Memory[29]= xx   Register[29]= xxxxxxxx
+# Instruction Memory[30]= xx  Data Memory[30]= xx   Register[30]= xxxxxxxx
+#                    0PC 00000004  SUM xxxxxxxx   INST 02108220   REGISTER 00000000 00000000 00000000 00000000 
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'i2'. The port definition is at: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult4_to_1_5.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processor/mult1 File: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v Line: 138
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'i3'. The port definition is at: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult4_to_1_5.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processor/mult1 File: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v Line: 138
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'i1'. The port definition is at: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult2_to_1_5.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processor/mult5 File: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v Line: 143
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'i1'. The port definition is at: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult2_to_1_32.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processor/mult6 File: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v Line: 155
+run
+# Instruction Memory[0]= 00  Data Memory[0]= xx   Register[0]= 00000000
+# Instruction Memory[1]= 00  Data Memory[1]= xx   Register[1]= 00000000
+# Instruction Memory[2]= 00  Data Memory[2]= xx   Register[2]= 00000000
+# Instruction Memory[3]= 00  Data Memory[3]= xx   Register[3]= 00000000
+# Instruction Memory[4]= 02  Data Memory[4]= xx   Register[4]= 00000000
+# Instruction Memory[5]= 10  Data Memory[5]= xx   Register[5]= 00000000
+# Instruction Memory[6]= 82  Data Memory[6]= xx   Register[6]= 00000000
+# Instruction Memory[7]= 20  Data Memory[7]= xx   Register[7]= 00000000
+# Instruction Memory[8]= xx  Data Memory[8]= xx   Register[8]= 00000000
+# Instruction Memory[9]= xx  Data Memory[9]= xx   Register[9]= 00000000
+# Instruction Memory[10]= xx  Data Memory[10]= xx   Register[10]= 00000000
+# Instruction Memory[11]= xx  Data Memory[11]= xx   Register[11]= xxxxxxxx
+# Instruction Memory[12]= xx  Data Memory[12]= xx   Register[12]= xxxxxxxx
+# Instruction Memory[13]= xx  Data Memory[13]= xx   Register[13]= xxxxxxxx
+# Instruction Memory[14]= xx  Data Memory[14]= xx   Register[14]= xxxxxxxx
+# Instruction Memory[15]= xx  Data Memory[15]= xx   Register[15]= xxxxxxxx
+# Instruction Memory[16]= xx  Data Memory[16]= xx   Register[16]= xxxxxxxx
+# Instruction Memory[17]= xx  Data Memory[17]= xx   Register[17]= xxxxxxxx
+# Instruction Memory[18]= xx  Data Memory[18]= xx   Register[18]= xxxxxxxx
+# Instruction Memory[19]= xx  Data Memory[19]= xx   Register[19]= xxxxxxxx
+# Instruction Memory[20]= xx  Data Memory[20]= xx   Register[20]= xxxxxxxx
+# Instruction Memory[21]= xx  Data Memory[21]= xx   Register[21]= xxxxxxxx
+# Instruction Memory[22]= xx  Data Memory[22]= xx   Register[22]= xxxxxxxx
+# Instruction Memory[23]= xx  Data Memory[23]= xx   Register[23]= xxxxxxxx
+# Instruction Memory[24]= xx  Data Memory[24]= xx   Register[24]= xxxxxxxx
+# Instruction Memory[25]= xx  Data Memory[25]= xx   Register[25]= xxxxxxxx
+# Instruction Memory[26]= xx  Data Memory[26]= xx   Register[26]= xxxxxxxx
+# Instruction Memory[27]= xx  Data Memory[27]= xx   Register[27]= xxxxxxxx
+# Instruction Memory[28]= xx  Data Memory[28]= xx   Register[28]= xxxxxxxx
+# Instruction Memory[29]= xx  Data Memory[29]= xx   Register[29]= xxxxxxxx
+# Instruction Memory[30]= xx  Data Memory[30]= xx   Register[30]= xxxxxxxx
+#                    0PC 00000004  SUM xxxxxxxx   INST 02108220   REGISTER 00000000 00000000 00000000 00000000 
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'i2'. The port definition is at: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult4_to_1_5.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processor/mult1 File: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v Line: 138
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'i3'. The port definition is at: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult4_to_1_5.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processor/mult1 File: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v Line: 138
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'i1'. The port definition is at: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult2_to_1_5.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processor/mult5 File: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v Line: 143
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'i1'. The port definition is at: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult2_to_1_32.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processor/mult6 File: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v Line: 155
+run
+# Instruction Memory[0]= 00  Data Memory[0]= xx   Register[0]= 00000000
+# Instruction Memory[1]= 00  Data Memory[1]= xx   Register[1]= 00000000
+# Instruction Memory[2]= 00  Data Memory[2]= xx   Register[2]= 00000000
+# Instruction Memory[3]= 00  Data Memory[3]= xx   Register[3]= 00000000
+# Instruction Memory[4]= 02  Data Memory[4]= xx   Register[4]= 00000000
+# Instruction Memory[5]= 10  Data Memory[5]= xx   Register[5]= 00000000
+# Instruction Memory[6]= 82  Data Memory[6]= xx   Register[6]= 00000000
+# Instruction Memory[7]= 20  Data Memory[7]= xx   Register[7]= 00000000
+# Instruction Memory[8]= xx  Data Memory[8]= xx   Register[8]= 00000000
+# Instruction Memory[9]= xx  Data Memory[9]= xx   Register[9]= 00000000
+# Instruction Memory[10]= xx  Data Memory[10]= xx   Register[10]= 00000000
+# Instruction Memory[11]= xx  Data Memory[11]= xx   Register[11]= xxxxxxxx
+# Instruction Memory[12]= xx  Data Memory[12]= xx   Register[12]= xxxxxxxx
+# Instruction Memory[13]= xx  Data Memory[13]= xx   Register[13]= xxxxxxxx
+# Instruction Memory[14]= xx  Data Memory[14]= xx   Register[14]= xxxxxxxx
+# Instruction Memory[15]= xx  Data Memory[15]= xx   Register[15]= xxxxxxxx
+# Instruction Memory[16]= xx  Data Memory[16]= xx   Register[16]= xxxxxxxx
+# Instruction Memory[17]= xx  Data Memory[17]= xx   Register[17]= xxxxxxxx
+# Instruction Memory[18]= xx  Data Memory[18]= xx   Register[18]= xxxxxxxx
+# Instruction Memory[19]= xx  Data Memory[19]= xx   Register[19]= xxxxxxxx
+# Instruction Memory[20]= xx  Data Memory[20]= xx   Register[20]= xxxxxxxx
+# Instruction Memory[21]= xx  Data Memory[21]= xx   Register[21]= xxxxxxxx
+# Instruction Memory[22]= xx  Data Memory[22]= xx   Register[22]= xxxxxxxx
+# Instruction Memory[23]= xx  Data Memory[23]= xx   Register[23]= xxxxxxxx
+# Instruction Memory[24]= xx  Data Memory[24]= xx   Register[24]= xxxxxxxx
+# Instruction Memory[25]= xx  Data Memory[25]= xx   Register[25]= xxxxxxxx
+# Instruction Memory[26]= xx  Data Memory[26]= xx   Register[26]= xxxxxxxx
+# Instruction Memory[27]= xx  Data Memory[27]= xx   Register[27]= xxxxxxxx
+# Instruction Memory[28]= xx  Data Memory[28]= xx   Register[28]= xxxxxxxx
+# Instruction Memory[29]= xx  Data Memory[29]= xx   Register[29]= xxxxxxxx
+# Instruction Memory[30]= xx  Data Memory[30]= xx   Register[30]= xxxxxxxx
+#                    0PC 00000004  SUM xxxxxxxx   INST 02108220   REGISTER 00000000 00000000 00000000 00000000 
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'i2'. The port definition is at: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult4_to_1_5.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processor/mult1 File: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v Line: 138
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'i3'. The port definition is at: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult4_to_1_5.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processor/mult1 File: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v Line: 138
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'i1'. The port definition is at: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult2_to_1_5.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processor/mult5 File: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v Line: 143
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'i1'. The port definition is at: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult2_to_1_32.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processor/mult6 File: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v Line: 155
+run
+# Instruction Memory[0]= 00  Data Memory[0]= xx   Register[0]= 00000000
+# Instruction Memory[1]= 00  Data Memory[1]= xx   Register[1]= 00000000
+# Instruction Memory[2]= 00  Data Memory[2]= xx   Register[2]= 00000000
+# Instruction Memory[3]= 00  Data Memory[3]= xx   Register[3]= 00000000
+# Instruction Memory[4]= 02  Data Memory[4]= xx   Register[4]= 00000000
+# Instruction Memory[5]= 10  Data Memory[5]= xx   Register[5]= 00000000
+# Instruction Memory[6]= 82  Data Memory[6]= xx   Register[6]= 00000000
+# Instruction Memory[7]= 20  Data Memory[7]= xx   Register[7]= 00000000
+# Instruction Memory[8]= xx  Data Memory[8]= xx   Register[8]= 00000000
+# Instruction Memory[9]= xx  Data Memory[9]= xx   Register[9]= 00000000
+# Instruction Memory[10]= xx  Data Memory[10]= xx   Register[10]= 00000000
+# Instruction Memory[11]= xx  Data Memory[11]= xx   Register[11]= 00000000
+# Instruction Memory[12]= xx  Data Memory[12]= xx   Register[12]= 00000000
+# Instruction Memory[13]= xx  Data Memory[13]= xx   Register[13]= 00000000
+# Instruction Memory[14]= xx  Data Memory[14]= xx   Register[14]= 00000000
+# Instruction Memory[15]= xx  Data Memory[15]= xx   Register[15]= 00000000
+# Instruction Memory[16]= xx  Data Memory[16]= xx   Register[16]= 00000000
+# Instruction Memory[17]= xx  Data Memory[17]= xx   Register[17]= 00000000
+# Instruction Memory[18]= xx  Data Memory[18]= xx   Register[18]= 00000000
+# Instruction Memory[19]= xx  Data Memory[19]= xx   Register[19]= 00000000
+# Instruction Memory[20]= xx  Data Memory[20]= xx   Register[20]= 00000000
+# Instruction Memory[21]= xx  Data Memory[21]= xx   Register[21]= 00000000
+# Instruction Memory[22]= xx  Data Memory[22]= xx   Register[22]= 00000000
+# Instruction Memory[23]= xx  Data Memory[23]= xx   Register[23]= 00000000
+# Instruction Memory[24]= xx  Data Memory[24]= xx   Register[24]= 00000000
+# Instruction Memory[25]= xx  Data Memory[25]= xx   Register[25]= xxxxxxxx
+# Instruction Memory[26]= xx  Data Memory[26]= xx   Register[26]= xxxxxxxx
+# Instruction Memory[27]= xx  Data Memory[27]= xx   Register[27]= xxxxxxxx
+# Instruction Memory[28]= xx  Data Memory[28]= xx   Register[28]= xxxxxxxx
+# Instruction Memory[29]= xx  Data Memory[29]= xx   Register[29]= xxxxxxxx
+# Instruction Memory[30]= xx  Data Memory[30]= xx   Register[30]= xxxxxxxx
+#                    0PC 00000004  SUM 00000000   INST 02108220   REGISTER 00000000 00000000 00000000 00000000 
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'i2'. The port definition is at: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult4_to_1_5.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processor/mult1 File: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v Line: 138
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'i3'. The port definition is at: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult4_to_1_5.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processor/mult1 File: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v Line: 138
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'i1'. The port definition is at: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult2_to_1_5.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processor/mult5 File: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v Line: 143
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'i1'. The port definition is at: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult2_to_1_32.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processor/mult6 File: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v Line: 155
+run
+# Instruction Memory[0]= 00  Data Memory[0]= xx   Register[0]= 00000000
+# Instruction Memory[1]= 00  Data Memory[1]= xx   Register[1]= 00000000
+# Instruction Memory[2]= 00  Data Memory[2]= xx   Register[2]= 00000000
+# Instruction Memory[3]= 00  Data Memory[3]= xx   Register[3]= 00000000
+# Instruction Memory[4]= 02  Data Memory[4]= xx   Register[4]= 00000000
+# Instruction Memory[5]= 10  Data Memory[5]= xx   Register[5]= 00000000
+# Instruction Memory[6]= 82  Data Memory[6]= xx   Register[6]= 00000000
+# Instruction Memory[7]= 20  Data Memory[7]= xx   Register[7]= 00000000
+# Instruction Memory[8]= xx  Data Memory[8]= xx   Register[8]= 00000000
+# Instruction Memory[9]= xx  Data Memory[9]= xx   Register[9]= 00000000
+# Instruction Memory[10]= xx  Data Memory[10]= xx   Register[10]= 00000000
+# Instruction Memory[11]= xx  Data Memory[11]= xx   Register[11]= 00000000
+# Instruction Memory[12]= xx  Data Memory[12]= xx   Register[12]= 00000000
+# Instruction Memory[13]= xx  Data Memory[13]= xx   Register[13]= 00000000
+# Instruction Memory[14]= xx  Data Memory[14]= xx   Register[14]= 00000000
+# Instruction Memory[15]= xx  Data Memory[15]= xx   Register[15]= 00000000
+# Instruction Memory[16]= xx  Data Memory[16]= xx   Register[16]= 00000000
+# Instruction Memory[17]= xx  Data Memory[17]= xx   Register[17]= xxxxxxxx
+# Instruction Memory[18]= xx  Data Memory[18]= xx   Register[18]= xxxxxxxx
+# Instruction Memory[19]= xx  Data Memory[19]= xx   Register[19]= xxxxxxxx
+# Instruction Memory[20]= xx  Data Memory[20]= xx   Register[20]= xxxxxxxx
+# Instruction Memory[21]= xx  Data Memory[21]= xx   Register[21]= xxxxxxxx
+# Instruction Memory[22]= xx  Data Memory[22]= xx   Register[22]= xxxxxxxx
+# Instruction Memory[23]= xx  Data Memory[23]= xx   Register[23]= xxxxxxxx
+# Instruction Memory[24]= xx  Data Memory[24]= xx   Register[24]= xxxxxxxx
+# Instruction Memory[25]= xx  Data Memory[25]= xx   Register[25]= xxxxxxxx
+# Instruction Memory[26]= xx  Data Memory[26]= xx   Register[26]= xxxxxxxx
+# Instruction Memory[27]= xx  Data Memory[27]= xx   Register[27]= xxxxxxxx
+# Instruction Memory[28]= xx  Data Memory[28]= xx   Register[28]= xxxxxxxx
+# Instruction Memory[29]= xx  Data Memory[29]= xx   Register[29]= xxxxxxxx
+# Instruction Memory[30]= xx  Data Memory[30]= xx   Register[30]= xxxxxxxx
+#                    0PC 00000004  SUM 00000000   INST 02108220   REGISTER 00000000 00000000 00000000 00000000 
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'i2'. The port definition is at: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult4_to_1_5.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processor/mult1 File: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v Line: 138
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'i3'. The port definition is at: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult4_to_1_5.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processor/mult1 File: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v Line: 138
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'i1'. The port definition is at: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult2_to_1_5.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processor/mult5 File: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v Line: 143
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'i1'. The port definition is at: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult2_to_1_32.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processor/mult6 File: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v Line: 155
+run
+# Instruction Memory[0]= 00  Data Memory[0]= xx   Register[0]= 00000000
+# Instruction Memory[1]= 00  Data Memory[1]= xx   Register[1]= 00000000
+# Instruction Memory[2]= 00  Data Memory[2]= xx   Register[2]= 00000000
+# Instruction Memory[3]= 00  Data Memory[3]= xx   Register[3]= 00000000
+# Instruction Memory[4]= 02  Data Memory[4]= xx   Register[4]= 00000000
+# Instruction Memory[5]= 10  Data Memory[5]= xx   Register[5]= 00000000
+# Instruction Memory[6]= 82  Data Memory[6]= xx   Register[6]= 00000000
+# Instruction Memory[7]= 20  Data Memory[7]= xx   Register[7]= 00000000
+# Instruction Memory[8]= xx  Data Memory[8]= xx   Register[8]= 00000000
+# Instruction Memory[9]= xx  Data Memory[9]= xx   Register[9]= 00000000
+# Instruction Memory[10]= xx  Data Memory[10]= xx   Register[10]= 00000000
+# Instruction Memory[11]= xx  Data Memory[11]= xx   Register[11]= 00000000
+# Instruction Memory[12]= xx  Data Memory[12]= xx   Register[12]= 00000000
+# Instruction Memory[13]= xx  Data Memory[13]= xx   Register[13]= 00000000
+# Instruction Memory[14]= xx  Data Memory[14]= xx   Register[14]= 00000000
+# Instruction Memory[15]= xx  Data Memory[15]= xx   Register[15]= 00000000
+# Instruction Memory[16]= xx  Data Memory[16]= xx   Register[16]= 00000000
+# Instruction Memory[17]= xx  Data Memory[17]= xx   Register[17]= 00000000
+# Instruction Memory[18]= xx  Data Memory[18]= xx   Register[18]= 00000000
+# Instruction Memory[19]= xx  Data Memory[19]= xx   Register[19]= xxxxxxxx
+# Instruction Memory[20]= xx  Data Memory[20]= xx   Register[20]= xxxxxxxx
+# Instruction Memory[21]= xx  Data Memory[21]= xx   Register[21]= xxxxxxxx
+# Instruction Memory[22]= xx  Data Memory[22]= xx   Register[22]= xxxxxxxx
+# Instruction Memory[23]= xx  Data Memory[23]= xx   Register[23]= xxxxxxxx
+# Instruction Memory[24]= xx  Data Memory[24]= xx   Register[24]= xxxxxxxx
+# Instruction Memory[25]= xx  Data Memory[25]= xx   Register[25]= xxxxxxxx
+# Instruction Memory[26]= xx  Data Memory[26]= xx   Register[26]= xxxxxxxx
+# Instruction Memory[27]= xx  Data Memory[27]= xx   Register[27]= xxxxxxxx
+# Instruction Memory[28]= xx  Data Memory[28]= xx   Register[28]= xxxxxxxx
+# Instruction Memory[29]= xx  Data Memory[29]= xx   Register[29]= xxxxxxxx
+# Instruction Memory[30]= xx  Data Memory[30]= xx   Register[30]= xxxxxxxx
+#                    0PC 00000004  SUM 00000000   INST 02108220   REGISTER 00000000 00000000 00000000 00000000 
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'i2'. The port definition is at: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult4_to_1_5.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processor/mult1 File: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v Line: 138
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'i3'. The port definition is at: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult4_to_1_5.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processor/mult1 File: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v Line: 138
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'i1'. The port definition is at: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult2_to_1_5.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processor/mult5 File: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v Line: 143
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'i1'. The port definition is at: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult2_to_1_32.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processor/mult6 File: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v Line: 155
+run
+# Instruction Memory[0]= 00  Data Memory[0]= xx   Register[0]= 00000000
+# Instruction Memory[1]= 00  Data Memory[1]= xx   Register[1]= 00000000
+# Instruction Memory[2]= 00  Data Memory[2]= xx   Register[2]= 00000000
+# Instruction Memory[3]= 00  Data Memory[3]= xx   Register[3]= 00000000
+# Instruction Memory[4]= 02  Data Memory[4]= xx   Register[4]= 00000000
+# Instruction Memory[5]= 10  Data Memory[5]= xx   Register[5]= 00000000
+# Instruction Memory[6]= 82  Data Memory[6]= xx   Register[6]= 00000000
+# Instruction Memory[7]= 20  Data Memory[7]= xx   Register[7]= 00000000
+# Instruction Memory[8]= xx  Data Memory[8]= xx   Register[8]= 00000000
+# Instruction Memory[9]= xx  Data Memory[9]= xx   Register[9]= 00000000
+# Instruction Memory[10]= xx  Data Memory[10]= xx   Register[10]= 00000000
+# Instruction Memory[11]= xx  Data Memory[11]= xx   Register[11]= 00000000
+# Instruction Memory[12]= xx  Data Memory[12]= xx   Register[12]= 00000000
+# Instruction Memory[13]= xx  Data Memory[13]= xx   Register[13]= 00000000
+# Instruction Memory[14]= xx  Data Memory[14]= xx   Register[14]= 00000000
+# Instruction Memory[15]= xx  Data Memory[15]= xx   Register[15]= 00000000
+# Instruction Memory[16]= xx  Data Memory[16]= xx   Register[16]= 00000000
+# Instruction Memory[17]= xx  Data Memory[17]= xx   Register[17]= 00000000
+# Instruction Memory[18]= xx  Data Memory[18]= xx   Register[18]= xxxxxxxx
+# Instruction Memory[19]= xx  Data Memory[19]= xx   Register[19]= xxxxxxxx
+# Instruction Memory[20]= xx  Data Memory[20]= xx   Register[20]= xxxxxxxx
+# Instruction Memory[21]= xx  Data Memory[21]= xx   Register[21]= xxxxxxxx
+# Instruction Memory[22]= xx  Data Memory[22]= xx   Register[22]= xxxxxxxx
+# Instruction Memory[23]= xx  Data Memory[23]= xx   Register[23]= xxxxxxxx
+# Instruction Memory[24]= xx  Data Memory[24]= xx   Register[24]= xxxxxxxx
+# Instruction Memory[25]= xx  Data Memory[25]= xx   Register[25]= xxxxxxxx
+# Instruction Memory[26]= xx  Data Memory[26]= xx   Register[26]= xxxxxxxx
+# Instruction Memory[27]= xx  Data Memory[27]= xx   Register[27]= xxxxxxxx
+# Instruction Memory[28]= xx  Data Memory[28]= xx   Register[28]= xxxxxxxx
+# Instruction Memory[29]= xx  Data Memory[29]= xx   Register[29]= xxxxxxxx
+# Instruction Memory[30]= xx  Data Memory[30]= xx   Register[30]= xxxxxxxx
+#                    0PC 00000004  SUM 00000000   INST 02108220   REGISTER 00000000 00000000 00000000 00000000 
+run
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'i2'. The port definition is at: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult4_to_1_5.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processor/mult1 File: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v Line: 138
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'i3'. The port definition is at: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult4_to_1_5.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processor/mult1 File: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v Line: 138
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'i1'. The port definition is at: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult2_to_1_5.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processor/mult5 File: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v Line: 143
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'i1'. The port definition is at: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult2_to_1_32.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processor/mult6 File: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v Line: 155
+run
+# Instruction Memory[0]= 00  Data Memory[0]= xx   Register[0]= 00000000
+# Instruction Memory[1]= 00  Data Memory[1]= xx   Register[1]= 00000000
+# Instruction Memory[2]= 00  Data Memory[2]= xx   Register[2]= 00000000
+# Instruction Memory[3]= 00  Data Memory[3]= xx   Register[3]= 00000000
+# Instruction Memory[4]= 02  Data Memory[4]= xx   Register[4]= 00000000
+# Instruction Memory[5]= 10  Data Memory[5]= xx   Register[5]= 00000000
+# Instruction Memory[6]= 82  Data Memory[6]= xx   Register[6]= 00000000
+# Instruction Memory[7]= 20  Data Memory[7]= xx   Register[7]= 00000000
+# Instruction Memory[8]= xx  Data Memory[8]= xx   Register[8]= 00000000
+# Instruction Memory[9]= xx  Data Memory[9]= xx   Register[9]= 00000000
+# Instruction Memory[10]= xx  Data Memory[10]= xx   Register[10]= 00000000
+# Instruction Memory[11]= xx  Data Memory[11]= xx   Register[11]= 00000000
+# Instruction Memory[12]= xx  Data Memory[12]= xx   Register[12]= 00000000
+# Instruction Memory[13]= xx  Data Memory[13]= xx   Register[13]= 00000000
+# Instruction Memory[14]= xx  Data Memory[14]= xx   Register[14]= 00000000
+# Instruction Memory[15]= xx  Data Memory[15]= xx   Register[15]= 00000000
+# Instruction Memory[16]= xx  Data Memory[16]= xx   Register[16]= 00000000
+# Instruction Memory[17]= xx  Data Memory[17]= xx   Register[17]= 00000001
+# Instruction Memory[18]= xx  Data Memory[18]= xx   Register[18]= xxxxxxxx
+# Instruction Memory[19]= xx  Data Memory[19]= xx   Register[19]= xxxxxxxx
+# Instruction Memory[20]= xx  Data Memory[20]= xx   Register[20]= xxxxxxxx
+# Instruction Memory[21]= xx  Data Memory[21]= xx   Register[21]= xxxxxxxx
+# Instruction Memory[22]= xx  Data Memory[22]= xx   Register[22]= xxxxxxxx
+# Instruction Memory[23]= xx  Data Memory[23]= xx   Register[23]= xxxxxxxx
+# Instruction Memory[24]= xx  Data Memory[24]= xx   Register[24]= xxxxxxxx
+# Instruction Memory[25]= xx  Data Memory[25]= xx   Register[25]= xxxxxxxx
+# Instruction Memory[26]= xx  Data Memory[26]= xx   Register[26]= xxxxxxxx
+# Instruction Memory[27]= xx  Data Memory[27]= xx   Register[27]= xxxxxxxx
+# Instruction Memory[28]= xx  Data Memory[28]= xx   Register[28]= xxxxxxxx
+# Instruction Memory[29]= xx  Data Memory[29]= xx   Register[29]= xxxxxxxx
+# Instruction Memory[30]= xx  Data Memory[30]= xx   Register[30]= xxxxxxxx
+#                    0PC 00000004  SUM 00000000   INST 02108220   REGISTER 00000000 00000000 00000000 00000000 
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'i2'. The port definition is at: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult4_to_1_5.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processor/mult1 File: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v Line: 138
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'i3'. The port definition is at: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult4_to_1_5.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processor/mult1 File: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v Line: 138
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'i1'. The port definition is at: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult2_to_1_5.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processor/mult5 File: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v Line: 143
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'i1'. The port definition is at: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult2_to_1_32.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processor/mult6 File: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v Line: 155
+run
+# Instruction Memory[0]= 00  Data Memory[0]= xx   Register[0]= 00000000
+# Instruction Memory[1]= 00  Data Memory[1]= xx   Register[1]= 00000000
+# Instruction Memory[2]= 00  Data Memory[2]= xx   Register[2]= 00000000
+# Instruction Memory[3]= 00  Data Memory[3]= xx   Register[3]= 00000000
+# Instruction Memory[4]= 02  Data Memory[4]= xx   Register[4]= 00000000
+# Instruction Memory[5]= 10  Data Memory[5]= xx   Register[5]= 00000000
+# Instruction Memory[6]= 82  Data Memory[6]= xx   Register[6]= 00000000
+# Instruction Memory[7]= 20  Data Memory[7]= xx   Register[7]= 00000000
+# Instruction Memory[8]= xx  Data Memory[8]= xx   Register[8]= 00000000
+# Instruction Memory[9]= xx  Data Memory[9]= xx   Register[9]= 00000000
+# Instruction Memory[10]= xx  Data Memory[10]= xx   Register[10]= 00000000
+# Instruction Memory[11]= xx  Data Memory[11]= xx   Register[11]= 00000000
+# Instruction Memory[12]= xx  Data Memory[12]= xx   Register[12]= 00000000
+# Instruction Memory[13]= xx  Data Memory[13]= xx   Register[13]= 00000000
+# Instruction Memory[14]= xx  Data Memory[14]= xx   Register[14]= 00000000
+# Instruction Memory[15]= xx  Data Memory[15]= xx   Register[15]= 00000000
+# Instruction Memory[16]= xx  Data Memory[16]= xx   Register[16]= 00000001
+# Instruction Memory[17]= xx  Data Memory[17]= xx   Register[17]= 00000000
+# Instruction Memory[18]= xx  Data Memory[18]= xx   Register[18]= xxxxxxxx
+# Instruction Memory[19]= xx  Data Memory[19]= xx   Register[19]= xxxxxxxx
+# Instruction Memory[20]= xx  Data Memory[20]= xx   Register[20]= xxxxxxxx
+# Instruction Memory[21]= xx  Data Memory[21]= xx   Register[21]= xxxxxxxx
+# Instruction Memory[22]= xx  Data Memory[22]= xx   Register[22]= xxxxxxxx
+# Instruction Memory[23]= xx  Data Memory[23]= xx   Register[23]= xxxxxxxx
+# Instruction Memory[24]= xx  Data Memory[24]= xx   Register[24]= xxxxxxxx
+# Instruction Memory[25]= xx  Data Memory[25]= xx   Register[25]= xxxxxxxx
+# Instruction Memory[26]= xx  Data Memory[26]= xx   Register[26]= xxxxxxxx
+# Instruction Memory[27]= xx  Data Memory[27]= xx   Register[27]= xxxxxxxx
+# Instruction Memory[28]= xx  Data Memory[28]= xx   Register[28]= xxxxxxxx
+# Instruction Memory[29]= xx  Data Memory[29]= xx   Register[29]= xxxxxxxx
+# Instruction Memory[30]= xx  Data Memory[30]= xx   Register[30]= xxxxxxxx
+#                    0PC 00000004  SUM 00000002   INST 02108220   REGISTER 00000000 00000000 00000000 00000000 
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'i2'. The port definition is at: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult4_to_1_5.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processor/mult1 File: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v Line: 138
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'i3'. The port definition is at: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult4_to_1_5.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processor/mult1 File: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v Line: 138
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'i1'. The port definition is at: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult2_to_1_5.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processor/mult5 File: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v Line: 143
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'i1'. The port definition is at: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult2_to_1_32.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processor/mult6 File: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v Line: 155
+run
+# Instruction Memory[0]= 00  Data Memory[0]= xx   Register[0]= 00000000
+# Instruction Memory[1]= 00  Data Memory[1]= xx   Register[1]= 00000000
+# Instruction Memory[2]= 00  Data Memory[2]= xx   Register[2]= 00000000
+# Instruction Memory[3]= 00  Data Memory[3]= xx   Register[3]= 00000000
+# Instruction Memory[4]= 02  Data Memory[4]= xx   Register[4]= 00000000
+# Instruction Memory[5]= 10  Data Memory[5]= xx   Register[5]= 00000000
+# Instruction Memory[6]= 80  Data Memory[6]= xx   Register[6]= 00000000
+# Instruction Memory[7]= 20  Data Memory[7]= xx   Register[7]= 00000000
+# Instruction Memory[8]= xx  Data Memory[8]= xx   Register[8]= 00000000
+# Instruction Memory[9]= xx  Data Memory[9]= xx   Register[9]= 00000000
+# Instruction Memory[10]= xx  Data Memory[10]= xx   Register[10]= 00000000
+# Instruction Memory[11]= xx  Data Memory[11]= xx   Register[11]= 00000000
+# Instruction Memory[12]= xx  Data Memory[12]= xx   Register[12]= 00000000
+# Instruction Memory[13]= xx  Data Memory[13]= xx   Register[13]= 00000000
+# Instruction Memory[14]= xx  Data Memory[14]= xx   Register[14]= 00000000
+# Instruction Memory[15]= xx  Data Memory[15]= xx   Register[15]= 00000000
+# Instruction Memory[16]= xx  Data Memory[16]= xx   Register[16]= 00000001
+# Instruction Memory[17]= xx  Data Memory[17]= xx   Register[17]= 00000000
+# Instruction Memory[18]= xx  Data Memory[18]= xx   Register[18]= xxxxxxxx
+# Instruction Memory[19]= xx  Data Memory[19]= xx   Register[19]= xxxxxxxx
+# Instruction Memory[20]= xx  Data Memory[20]= xx   Register[20]= xxxxxxxx
+# Instruction Memory[21]= xx  Data Memory[21]= xx   Register[21]= xxxxxxxx
+# Instruction Memory[22]= xx  Data Memory[22]= xx   Register[22]= xxxxxxxx
+# Instruction Memory[23]= xx  Data Memory[23]= xx   Register[23]= xxxxxxxx
+# Instruction Memory[24]= xx  Data Memory[24]= xx   Register[24]= xxxxxxxx
+# Instruction Memory[25]= xx  Data Memory[25]= xx   Register[25]= xxxxxxxx
+# Instruction Memory[26]= xx  Data Memory[26]= xx   Register[26]= xxxxxxxx
+# Instruction Memory[27]= xx  Data Memory[27]= xx   Register[27]= xxxxxxxx
+# Instruction Memory[28]= xx  Data Memory[28]= xx   Register[28]= xxxxxxxx
+# Instruction Memory[29]= xx  Data Memory[29]= xx   Register[29]= xxxxxxxx
+# Instruction Memory[30]= xx  Data Memory[30]= xx   Register[30]= xxxxxxxx
+#                    0PC 00000004  SUM 00000002   INST 02108020   REGISTER 00000000 00000000 00000000 00000000 
+run
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'i2'. The port definition is at: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult4_to_1_5.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processor/mult1 File: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v Line: 138
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'i3'. The port definition is at: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult4_to_1_5.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processor/mult1 File: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v Line: 138
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'i1'. The port definition is at: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult2_to_1_5.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processor/mult5 File: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v Line: 143
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'i1'. The port definition is at: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult2_to_1_32.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processor/mult6 File: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v Line: 155
+run
+# Instruction Memory[0]= 00  Data Memory[0]= xx   Register[0]= 00000000
+# Instruction Memory[1]= 00  Data Memory[1]= xx   Register[1]= 00000000
+# Instruction Memory[2]= 00  Data Memory[2]= xx   Register[2]= 00000000
+# Instruction Memory[3]= 00  Data Memory[3]= xx   Register[3]= 00000000
+# Instruction Memory[4]= 02  Data Memory[4]= xx   Register[4]= 00000000
+# Instruction Memory[5]= 10  Data Memory[5]= xx   Register[5]= 00000000
+# Instruction Memory[6]= 80  Data Memory[6]= xx   Register[6]= 00000000
+# Instruction Memory[7]= 20  Data Memory[7]= xx   Register[7]= 00000000
+# Instruction Memory[8]= xx  Data Memory[8]= xx   Register[8]= 00000000
+# Instruction Memory[9]= xx  Data Memory[9]= xx   Register[9]= 00000000
+# Instruction Memory[10]= xx  Data Memory[10]= xx   Register[10]= 00000000
+# Instruction Memory[11]= xx  Data Memory[11]= xx   Register[11]= 00000000
+# Instruction Memory[12]= xx  Data Memory[12]= xx   Register[12]= 00000000
+# Instruction Memory[13]= xx  Data Memory[13]= xx   Register[13]= 00000000
+# Instruction Memory[14]= xx  Data Memory[14]= xx   Register[14]= 00000000
+# Instruction Memory[15]= xx  Data Memory[15]= xx   Register[15]= 00000000
+# Instruction Memory[16]= xx  Data Memory[16]= xx   Register[16]= 00000001
+# Instruction Memory[17]= xx  Data Memory[17]= xx   Register[17]= 00000000
+# Instruction Memory[18]= xx  Data Memory[18]= xx   Register[18]= xxxxxxxx
+# Instruction Memory[19]= xx  Data Memory[19]= xx   Register[19]= xxxxxxxx
+# Instruction Memory[20]= xx  Data Memory[20]= xx   Register[20]= xxxxxxxx
+# Instruction Memory[21]= xx  Data Memory[21]= xx   Register[21]= xxxxxxxx
+# Instruction Memory[22]= xx  Data Memory[22]= xx   Register[22]= xxxxxxxx
+# Instruction Memory[23]= xx  Data Memory[23]= xx   Register[23]= xxxxxxxx
+# Instruction Memory[24]= xx  Data Memory[24]= xx   Register[24]= xxxxxxxx
+# Instruction Memory[25]= xx  Data Memory[25]= xx   Register[25]= xxxxxxxx
+# Instruction Memory[26]= xx  Data Memory[26]= xx   Register[26]= xxxxxxxx
+# Instruction Memory[27]= xx  Data Memory[27]= xx   Register[27]= xxxxxxxx
+# Instruction Memory[28]= xx  Data Memory[28]= xx   Register[28]= xxxxxxxx
+# Instruction Memory[29]= xx  Data Memory[29]= xx   Register[29]= xxxxxxxx
+# Instruction Memory[30]= xx  Data Memory[30]= xx   Register[30]= xxxxxxxx
+#                    0PC 00000004  SUM 00000002   INST 02108020   REGISTER 00000000 00000000 00000000 00000000 
+vsim -gui work.processor
+# End time: 23:18:03 on May 23,2024, Elapsed time: 0:11:41
+# Errors: 0, Warnings: 5
+# vsim -gui work.processor 
+# Start time: 23:18:03 on May 23,2024
+# Loading work.processor
+# Loading work.mult4_to_1_5
+# Loading work.mult2_to_1_5
+# Loading work.mult4_to_1_32
+# Loading work.mult2_to_1_32
+# Loading work.alu32
+# Loading work.adder
+# Loading work.control
+# Loading work.signext
+# Loading work.zeroext
+# Loading work.alucont
+# Loading work.shift
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'i2'. The port definition is at: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult4_to_1_5.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processor/mult1 File: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v Line: 138
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'i3'. The port definition is at: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult4_to_1_5.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processor/mult1 File: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v Line: 138
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'i1'. The port definition is at: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult2_to_1_5.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processor/mult5 File: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v Line: 143
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'i1'. The port definition is at: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult2_to_1_32.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processor/mult6 File: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v Line: 155
+run
+# Instruction Memory[0]= 00  Data Memory[0]= xx   Register[0]= 00000000
+# Instruction Memory[1]= 00  Data Memory[1]= xx   Register[1]= 00000000
+# Instruction Memory[2]= 00  Data Memory[2]= xx   Register[2]= 00000000
+# Instruction Memory[3]= 00  Data Memory[3]= xx   Register[3]= 00000000
+# Instruction Memory[4]= 02  Data Memory[4]= xx   Register[4]= 00000000
+# Instruction Memory[5]= 10  Data Memory[5]= xx   Register[5]= 00000000
+# Instruction Memory[6]= 80  Data Memory[6]= xx   Register[6]= 00000000
+# Instruction Memory[7]= 20  Data Memory[7]= xx   Register[7]= 00000000
+# Instruction Memory[8]= xx  Data Memory[8]= xx   Register[8]= 00000000
+# Instruction Memory[9]= xx  Data Memory[9]= xx   Register[9]= 00000000
+# Instruction Memory[10]= xx  Data Memory[10]= xx   Register[10]= 00000000
+# Instruction Memory[11]= xx  Data Memory[11]= xx   Register[11]= 00000000
+# Instruction Memory[12]= xx  Data Memory[12]= xx   Register[12]= 00000000
+# Instruction Memory[13]= xx  Data Memory[13]= xx   Register[13]= 00000000
+# Instruction Memory[14]= xx  Data Memory[14]= xx   Register[14]= 00000000
+# Instruction Memory[15]= xx  Data Memory[15]= xx   Register[15]= 00000000
+# Instruction Memory[16]= xx  Data Memory[16]= xx   Register[16]= 00000001
+# Instruction Memory[17]= xx  Data Memory[17]= xx   Register[17]= 00000000
+# Instruction Memory[18]= xx  Data Memory[18]= xx   Register[18]= xxxxxxxx
+# Instruction Memory[19]= xx  Data Memory[19]= xx   Register[19]= xxxxxxxx
+# Instruction Memory[20]= xx  Data Memory[20]= xx   Register[20]= xxxxxxxx
+# Instruction Memory[21]= xx  Data Memory[21]= xx   Register[21]= xxxxxxxx
+# Instruction Memory[22]= xx  Data Memory[22]= xx   Register[22]= xxxxxxxx
+# Instruction Memory[23]= xx  Data Memory[23]= xx   Register[23]= xxxxxxxx
+# Instruction Memory[24]= xx  Data Memory[24]= xx   Register[24]= xxxxxxxx
+# Instruction Memory[25]= xx  Data Memory[25]= xx   Register[25]= xxxxxxxx
+# Instruction Memory[26]= xx  Data Memory[26]= xx   Register[26]= xxxxxxxx
+# Instruction Memory[27]= xx  Data Memory[27]= xx   Register[27]= xxxxxxxx
+# Instruction Memory[28]= xx  Data Memory[28]= xx   Register[28]= xxxxxxxx
+# Instruction Memory[29]= xx  Data Memory[29]= xx   Register[29]= xxxxxxxx
+# Instruction Memory[30]= xx  Data Memory[30]= xx   Register[30]= xxxxxxxx
+#                    0PC 00000004  SUM 00000002   INST 02108020   REGISTER 00000000 00000000 00000000 00000000 
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'i2'. The port definition is at: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult4_to_1_5.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processor/mult1 File: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v Line: 138
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'i3'. The port definition is at: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult4_to_1_5.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processor/mult1 File: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v Line: 138
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'i1'. The port definition is at: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult2_to_1_5.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processor/mult5 File: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v Line: 143
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'i1'. The port definition is at: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult2_to_1_32.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /processor/mult6 File: C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v Line: 155
+run
+# Instruction Memory[0]= 00  Data Memory[0]= xx   Register[0]= 00000000
+# Instruction Memory[1]= 00  Data Memory[1]= xx   Register[1]= 00000000
+# Instruction Memory[2]= 00  Data Memory[2]= xx   Register[2]= 00000000
+# Instruction Memory[3]= 00  Data Memory[3]= xx   Register[3]= 00000000
+# Instruction Memory[4]= 02  Data Memory[4]= xx   Register[4]= 00000000
+# Instruction Memory[5]= 10  Data Memory[5]= xx   Register[5]= 00000000
+# Instruction Memory[6]= 80  Data Memory[6]= xx   Register[6]= 00000000
+# Instruction Memory[7]= 20  Data Memory[7]= xx   Register[7]= 00000000
+# Instruction Memory[8]= xx  Data Memory[8]= xx   Register[8]= 00000000
+# Instruction Memory[9]= xx  Data Memory[9]= xx   Register[9]= 00000000
+# Instruction Memory[10]= xx  Data Memory[10]= xx   Register[10]= 00000000
+# Instruction Memory[11]= xx  Data Memory[11]= xx   Register[11]= 00000000
+# Instruction Memory[12]= xx  Data Memory[12]= xx   Register[12]= 00000000
+# Instruction Memory[13]= xx  Data Memory[13]= xx   Register[13]= 00000000
+# Instruction Memory[14]= xx  Data Memory[14]= xx   Register[14]= 00000000
+# Instruction Memory[15]= xx  Data Memory[15]= xx   Register[15]= 00000000
+# Instruction Memory[16]= xx  Data Memory[16]= xx   Register[16]= 00000001
+# Instruction Memory[17]= xx  Data Memory[17]= xx   Register[17]= 00000000
+# Instruction Memory[18]= xx  Data Memory[18]= xx   Register[18]= xxxxxxxx
+# Instruction Memory[19]= xx  Data Memory[19]= xx   Register[19]= xxxxxxxx
+# Instruction Memory[20]= xx  Data Memory[20]= xx   Register[20]= xxxxxxxx
+# Instruction Memory[21]= xx  Data Memory[21]= xx   Register[21]= xxxxxxxx
+# Instruction Memory[22]= xx  Data Memory[22]= xx   Register[22]= xxxxxxxx
+# Instruction Memory[23]= xx  Data Memory[23]= xx   Register[23]= xxxxxxxx
+# Instruction Memory[24]= xx  Data Memory[24]= xx   Register[24]= xxxxxxxx
+# Instruction Memory[25]= xx  Data Memory[25]= xx   Register[25]= xxxxxxxx
+# Instruction Memory[26]= xx  Data Memory[26]= xx   Register[26]= xxxxxxxx
+# Instruction Memory[27]= xx  Data Memory[27]= xx   Register[27]= xxxxxxxx
+# Instruction Memory[28]= xx  Data Memory[28]= xx   Register[28]= xxxxxxxx
+# Instruction Memory[29]= xx  Data Memory[29]= xx   Register[29]= xxxxxxxx
+# Instruction Memory[30]= xx  Data Memory[30]= xx   Register[30]= xxxxxxxx
+#                    0PC 00000004  SUM 00000002   INST 02108020   REGISTER 00000000 00000000 00000000 00000000 
+# End time: 23:19:20 on May 23,2024, Elapsed time: 0:01:17
+# Errors: 0, Warnings: 5
