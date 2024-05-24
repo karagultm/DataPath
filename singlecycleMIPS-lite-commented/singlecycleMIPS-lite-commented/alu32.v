@@ -51,7 +51,7 @@ begin
 zout=~(|sum);
 end
 
-always @(posedge clk)
+always @(negedge clk) //nededge yapıldı çünkü status flagler sadece clockun negatif kenarında güncellenmeli bu sayede önceki instructionları tutabilecekler 
 begin
 	 // Update status flags at the positive edge of the clock
     statusZ <= tempZ;
