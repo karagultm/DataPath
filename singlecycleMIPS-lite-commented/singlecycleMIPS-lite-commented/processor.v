@@ -136,12 +136,12 @@ assign dpack={datmem[sum[5:0]],datmem[sum[5:0]+1],datmem[sum[5:0]+2],datmem[sum[
 //multiplexers
 
 //mux with RegDst control and (jmxorControl or balnControl)
-wire thirtyone;
+wire [4:0] thirtyone;
 assign thirtyone=5'b11111;
 mult4_to_1_5  mult1(out1_1, inst20_16,inst15_11,thirtyone,thirtyone,regdest,jmxorcORbalnc);
 
 //mux blezalControl 
-wire twentyfive;
+wire [4:0] twentyfive;
 assign twentyfive=5'b11001;
 mult2_to_1_5 mult5(out1, out1_1, twentyfive, blezalControl);
 

@@ -10,278 +10,254 @@ z2
 cModel Technology
 dC:/intelFPGA/20.1
 vadder
-Z0 !s110 1716494772
+Z0 !s110 1716580333
 !i10b 1
-!s100 gWb<;Y:[8c^V3JALeYLDZ1
-Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IkU4IG@eGIRE6eI;R8dDPl1
-Z2 VDg1SIo80bB@j0V0VzS_@n1
-Z3 dC:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented
-Z4 w1716036425
-8C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/adder.v
-FC:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/adder.v
-!i122 74
-Z5 L0 1 5
-Z6 OV;L;2020.1;71
+!s100 Y;`Fz?LjC0QzPeNWf8_U<1
+I_EMQJPm2_R412Om[;D3:g0
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/GitHub/University/DataPath---CSE-3038-Project/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented
+w955028208
+8C:/GitHub/University/DataPath---CSE-3038-Project/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/adder.v
+FC:/GitHub/University/DataPath---CSE-3038-Project/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/adder.v
+L0 1
+Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z7 !s108 1716494772.000000
-!s107 C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/adder.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/adder.v|
+Z4 !s108 1716580333.000000
+!s107 C:/GitHub/University/DataPath---CSE-3038-Project/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/adder.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/GitHub/University/DataPath---CSE-3038-Project/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/adder.v|
 !i113 1
-Z8 o-work work
-Z9 tCvgOpt 0
+Z5 o-work work
+Z6 tCvgOpt 0
 valu32
 R0
 !i10b 1
-!s100 R><mnQinieIYUTIDEdfj:1
+!s100 U56GU2f;@X_Y]M^BZ4:e@0
+IA64G_G3d4bB6DimfXI9=a1
 R1
-IS`6T>W``V]R?Q63@0X8d?2
 R2
+w1716574902
+8C:/GitHub/University/DataPath---CSE-3038-Project/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/alu32.v
+FC:/GitHub/University/DataPath---CSE-3038-Project/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/alu32.v
+L0 1
 R3
-w1716411003
-8C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/alu32.v
-FC:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/alu32.v
-!i122 75
-L0 1 61
-R6
 r1
 !s85 0
 31
-R7
-!s107 C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/alu32.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/alu32.v|
+R4
+!s107 C:/GitHub/University/DataPath---CSE-3038-Project/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/alu32.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/GitHub/University/DataPath---CSE-3038-Project/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/alu32.v|
 !i113 1
-R8
-R9
+R5
+R6
 valucont
 R0
 !i10b 1
-!s100 ^bRSLliQP[fb4eCXRHb@c2
+!s100 0G`9Hh@GDg6XMF4iQ=D9S3
+I@57Tkand]Y3ae>E`R^^Ol1
 R1
-Ik;ocTJJE0>jCc<VlHo`_D2
 R2
+w1716407270
+8C:/GitHub/University/DataPath---CSE-3038-Project/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/alucont.v
+FC:/GitHub/University/DataPath---CSE-3038-Project/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/alucont.v
+L0 1
 R3
-Z10 w1716408226
-8C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/alucont.v
-FC:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/alucont.v
-!i122 76
-L0 1 24
-R6
 r1
 !s85 0
 31
-R7
-!s107 C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/alucont.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/alucont.v|
+R4
+!s107 C:/GitHub/University/DataPath---CSE-3038-Project/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/alucont.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/GitHub/University/DataPath---CSE-3038-Project/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/alucont.v|
 !i113 1
-R8
-R9
+R5
+R6
 vcontrol
 R0
 !i10b 1
-!s100 V6VGigOFWCjB8eLM<g9>a0
+!s100 gnJPSoBZQb^_R8oDN_NJS0
+I>XTN7JQgnZCi?YRG7eNzn1
 R1
-I`3f<5oAj[`ZL>cZoRR^S81
 R2
+w1716405012
+8C:/GitHub/University/DataPath---CSE-3038-Project/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/control.v
+FC:/GitHub/University/DataPath---CSE-3038-Project/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/control.v
+L0 1
 R3
-R10
-8C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/control.v
-FC:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/control.v
-!i122 77
-L0 1 42
-R6
 r1
 !s85 0
 31
-R7
-!s107 C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/control.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/control.v|
+R4
+!s107 C:/GitHub/University/DataPath---CSE-3038-Project/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/control.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/GitHub/University/DataPath---CSE-3038-Project/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/control.v|
 !i113 1
-R8
-R9
+R5
+R6
 vmult2_to_1_32
-Z11 !s110 1716494773
+Z7 !s110 1716580334
 !i10b 1
-!s100 Y_Id<LIRQ3DbCYAcIf6lb3
+!s100 ^aXF>kbOQm5iDYT=bV7M11
+ILB7I^V95i3UF3?6PocMld2
 R1
-I@i7N_E1zdP@0?fef8Yi<]0
 R2
+w1021135086
+8C:/GitHub/University/DataPath---CSE-3038-Project/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult2_to_1_32.v
+FC:/GitHub/University/DataPath---CSE-3038-Project/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult2_to_1_32.v
+L0 1
 R3
-R4
-8C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult2_to_1_32.v
-FC:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult2_to_1_32.v
-!i122 79
-Z12 L0 1 6
-R6
 r1
 !s85 0
 31
-Z13 !s108 1716494773.000000
-!s107 C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult2_to_1_32.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult2_to_1_32.v|
+R4
+!s107 C:/GitHub/University/DataPath---CSE-3038-Project/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult2_to_1_32.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/GitHub/University/DataPath---CSE-3038-Project/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult2_to_1_32.v|
 !i113 1
-R8
-R9
+R5
+R6
 vmult2_to_1_5
-R11
+R0
 !i10b 1
-!s100 QeR<>khHHW047@W2MP@;I2
+!s100 k]2`0V2=b67f6kc:ca8eK0
+IYSSK;C8lQ<iin^Ad7H[;50
 R1
-IfB>ZJ7<3KAP:C1ZNMi6l51
 R2
+w955028066
+8C:/GitHub/University/DataPath---CSE-3038-Project/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult2_to_1_5.v
+FC:/GitHub/University/DataPath---CSE-3038-Project/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult2_to_1_5.v
+L0 1
 R3
-R4
-8C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult2_to_1_5.v
-FC:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult2_to_1_5.v
-!i122 78
-R12
-R6
 r1
 !s85 0
 31
-R7
-!s107 C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult2_to_1_5.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult2_to_1_5.v|
+R4
+!s107 C:/GitHub/University/DataPath---CSE-3038-Project/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult2_to_1_5.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/GitHub/University/DataPath---CSE-3038-Project/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult2_to_1_5.v|
 !i113 1
-R8
-R9
+R5
+R6
 vmult4_to_1_32
-R11
+R7
 !i10b 1
-!s100 7^j8<EHDHQa9DBJmo3=kz3
+!s100 =:WP=7cnYhMnfFAbF6jj[1
+IGJ5dQ?LkSASh:Q_h`n?5_3
 R1
-IQo@=2^kIKgE2zNCZd^7nI3
 R2
+Z8 w1716489783
+8C:/GitHub/University/DataPath---CSE-3038-Project/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult4_to_1_32.v
+FC:/GitHub/University/DataPath---CSE-3038-Project/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult4_to_1_32.v
+L0 1
 R3
-w1716485528
-8C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult4_to_1_32.v
-FC:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult4_to_1_32.v
-!i122 85
-Z14 L0 1 10
-R6
 r1
 !s85 0
 31
-R13
-!s107 C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult4_to_1_32.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult4_to_1_32.v|
+Z9 !s108 1716580334.000000
+!s107 C:/GitHub/University/DataPath---CSE-3038-Project/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult4_to_1_32.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/GitHub/University/DataPath---CSE-3038-Project/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult4_to_1_32.v|
 !i113 1
-R8
-R9
+R5
+R6
 vmult4_to_1_5
-R11
+R7
 !i10b 1
-!s100 d]g[ZoAYg>;<IN4jFXJbX0
+!s100 Wkm^dYQMXO9Tc3V_flnA93
+IMY@2o;hlJ^44<:Bk=Cl=c3
 R1
-IJo46j`]Mi@aRjok^cYYF21
 R2
+R8
+8C:/GitHub/University/DataPath---CSE-3038-Project/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult4_to_1_5.v
+FC:/GitHub/University/DataPath---CSE-3038-Project/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult4_to_1_5.v
+L0 1
 R3
-w1716485374
-8C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult4_to_1_5.v
-FC:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult4_to_1_5.v
-!i122 84
-R14
-R6
 r1
 !s85 0
 31
-R13
-!s107 C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult4_to_1_5.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult4_to_1_5.v|
-!i113 1
-R8
 R9
+!s107 C:/GitHub/University/DataPath---CSE-3038-Project/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult4_to_1_5.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/GitHub/University/DataPath---CSE-3038-Project/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult4_to_1_5.v|
+!i113 1
+R5
+R6
 vprocessor
-R11
+R7
 !i10b 1
-!s100 XRUoX3zEi5^iBi5R_DUJJ3
+!s100 oA;:S321fz35KF`9GF_j]0
+I11TQ[ZYf[I>UlTzi6eTAC2
 R1
-I@JoPi]bTk;B4D4NJ^[X6_1
 R2
+w1716579455
+8C:/GitHub/University/DataPath---CSE-3038-Project/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v
+FC:/GitHub/University/DataPath---CSE-3038-Project/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v
+L0 1
 R3
-w1716494761
-8C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v
-FC:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v
-!i122 80
-L0 1 218
-R6
 r1
 !s85 0
 31
-R13
-!s107 C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v|
-!i113 1
-R8
 R9
+!s107 C:/GitHub/University/DataPath---CSE-3038-Project/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/GitHub/University/DataPath---CSE-3038-Project/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v|
+!i113 1
+R5
+R6
 vshift
-R11
+R7
 !i10b 1
-!s100 XX2;Z1lf9Dd@dcO[G5lL:2
+!s100 GWP55OEfIRVA_6M>iSY8d2
+I4T^BGE:m9aceQkYVI7Ade2
 R1
-I[6GO=3B9Mdado_?;f?QEH0
 R2
+w955028064
+8C:/GitHub/University/DataPath---CSE-3038-Project/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/shift.v
+FC:/GitHub/University/DataPath---CSE-3038-Project/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/shift.v
+L0 1
 R3
-R4
-8C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/shift.v
-FC:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/shift.v
-!i122 81
-R5
-R6
 r1
 !s85 0
 31
-R13
-!s107 C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/shift.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/shift.v|
-!i113 1
-R8
 R9
+!s107 C:/GitHub/University/DataPath---CSE-3038-Project/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/shift.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/GitHub/University/DataPath---CSE-3038-Project/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/shift.v|
+!i113 1
+R5
+R6
 vsignext
-R11
+R7
 !i10b 1
-!s100 aj?PFk=ka=A4[;Kz]?d6F3
+!s100 JAEfRFLIAaX=@V<j@h[jS1
+ITR39EcUPan>n]RRR]:?fL1
 R1
-I_FhReO450;B4eKIcC6<9U3
 R2
+w1335991790
+8C:/GitHub/University/DataPath---CSE-3038-Project/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/signext.v
+FC:/GitHub/University/DataPath---CSE-3038-Project/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/signext.v
+L0 1
 R3
-R4
-8C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/signext.v
-FC:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/signext.v
-!i122 82
-R5
-R6
 r1
 !s85 0
 31
-R13
-!s107 C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/signext.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/signext.v|
-!i113 1
-R8
 R9
+!s107 C:/GitHub/University/DataPath---CSE-3038-Project/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/signext.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/GitHub/University/DataPath---CSE-3038-Project/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/signext.v|
+!i113 1
+R5
+R6
 vzeroext
-R11
+R7
 !i10b 1
-!s100 X=onVKP1VJ2]WhN6`566m1
+!s100 _[ZN>@8YhJ[;N>L;R0VG^2
+IUCZkG^8lQ?:Y`7D[BCPIL0
 R1
-IEb1hlND3meETPDgGBBb5c0
 R2
+w1716577363
+8C:/GitHub/University/DataPath---CSE-3038-Project/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/zeroext.v
+FC:/GitHub/University/DataPath---CSE-3038-Project/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/zeroext.v
+L0 1
 R3
-w1716375220
-8C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/zeroext.v
-FC:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/zeroext.v
-!i122 83
-R5
-R6
 r1
 !s85 0
 31
-R13
-!s107 C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/zeroext.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/ensar/Desktop/mips/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/zeroext.v|
-!i113 1
-R8
 R9
+!s107 C:/GitHub/University/DataPath---CSE-3038-Project/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/zeroext.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/GitHub/University/DataPath---CSE-3038-Project/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/zeroext.v|
+!i113 1
+R5
+R6
