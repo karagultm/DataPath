@@ -26,6 +26,13 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	mult4_to_1_32
 
+} {} {}} C:/GitHub/University/DataPath---CSE-3038-Project/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v {1 {vlog -work work -stats=none C:/GitHub/University/DataPath---CSE-3038-Project/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module processor
+
+Top level modules:
+	processor
+
 } {} {}} C:/GitHub/University/DataPath---CSE-3038-Project/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/adder.v {1 {vlog -work work -stats=none C:/GitHub/University/DataPath---CSE-3038-Project/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/adder.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module adder
