@@ -40,28 +40,28 @@ regdest,alusrc,memtoreg,regwrite,memread,memwrite,branch,aluop1,aluop0,
 noriControl, blezalControl, balnControl, jalpcControl, brvControl, jmxorControl; // new instruction controls
 
 // jmxorControl or balnControl
-wire jmxorcORbalcc;
-assign jmxorcORbalcc = jmxorControl | balnControl;
+wire jmxorcORbalnc;
+assign jmxorcORbalnc = jmxorControl || balnControl;
 
 //jmxorrControl or blezalControl or jalpcControl
 wire jmxorcORblezalORjalpc;
-assign jmxorcORblezalORjalpc = jmxorControl | blezalControl | jalpcControl;
+assign jmxorcORblezalORjalpc = jmxorControl || blezalControl || jalpcControl;
 
 //statusz or statusn
 wire statuszORstatusn;
-assign statuszORstatusn = statusZ | statusN;
+assign statuszORstatusn = statusZ || statusN;
 
 //blezalControl and statuszORstatusn
 wire blezalANDstatuszORstatusn;
-assign blezalANDstatuszORstatusn = blezalControl & statuszORstatusn;
+assign blezalANDstatuszORstatusn = blezalControl && statuszORstatusn;
 
 //statusV and brvControl
 wire statusvANDbrv;
-assign statusvANDbrv = statusV & brvControl;
+assign statusvANDbrv = statusV && brvControl;
 
 //jmxor or statusvANDbrv
 wire pcsrc1;
-assign pcsrc1= jmxorControl | statusvANDbrv;
+assign pcsrc1= jmxorControl || statusvANDbrv;
 
 //branch and zout
 wire branchANDzout;
@@ -69,15 +69,17 @@ assign branchANDzout=branch && zout;
 
 //branchandzout or jalpcControl or blezalANDstatuszORstatusn
 wire pcsrc0;
-assign pcsrc0 = branchANDzout | jalpcControl | blezalANDstatuszORstatusn;
+assign pcsrc0 = branchANDzout || jalpcControl || blezalANDstatuszORstatusn;
 
 //statusn and balnControl
 wire statusnANDbaln;
-assign statusnANDbaln = statusN & balnControl; 
+assign statusnANDbaln = statusN && balnControl; 
 
 
 //32-size register file (32 bit(1 word) for each register)
 reg [31:0] registerfile[0:31];
+//32 adet 32 bit register tanımlanıyor burada 
+
 
 integer i;
 
@@ -96,12 +98,13 @@ end
 
 //instruction memory
 //4-byte instruction
- assign instruc={mem[pc[4:0]],mem[pc[4:0]+1],mem[pc[4:0]+2],mem[pc[4:0]+3]};
- assign inst31_26=instruc[31:26];
+ assign instruc={mem[pc[4:0]],mem[pc[4:0]+1],mem[pc[4:0]+2],mem[pc[4:0]+3]}; // yani instuction memoryden 4 tane hexadesimal alıyorum
+ assign inst31_26=instruc[31:26]; 
  assign inst25_21=instruc[25:21];
  assign inst20_16=instruc[20:16];
  assign inst15_11=instruc[15:11];
  assign inst15_0=instruc[15:0];
+ assign inst5_0=instruc[5:0];
 
 
 // Baln operation
@@ -110,12 +113,12 @@ end
 //
 
 wire [3:0] first4BitsOfPC;
-wire [32:0] labelAddress;
+wire [32:0] pseudoAddress;
 wire [27:0] extendedLabelAddress;
-assign first4BitsOfPC = adder1out[31:28];
 
-assign extendedLabelAddress = {labelAddress, 2'b00};
-assign labelAddress = {first4BitsOfPC,extendedLabelAddress};
+assign first4BitsOfPC = adder1out[31:28];
+assign extendedLabelAddress = {pseudoAddress, 2'b00}; //shift left 2
+assign pseudoAddress = {first4BitsOfPC,extendedLabelAddress}; 	//pcnin ilk 4 biti ile labelin 28 biti concatene ediliyor
 
 
 
@@ -135,7 +138,7 @@ assign dpack={datmem[sum[5:0]],datmem[sum[5:0]+1],datmem[sum[5:0]+2],datmem[sum[
 //mux with RegDst control and (jmxorControl or balnControl)
 wire thirtyone;
 assign thirtyone=5'b11111;
-mult4_to_1_5  mult1(out1_1, instruc[20:16],instruc[15:11],thirtyone,thirtyone,regdest,jmxorcORbalcc);
+mult4_to_1_5  mult1(out1_1, inst20_16,inst15_11,thirtyone,thirtyone,regdest,jmxorcORbalnc);
 
 //mux blezalControl 
 wire twentyfive;
@@ -146,13 +149,13 @@ mult2_to_1_5 mult5(out1, out1_1, twentyfive, blezalControl);
 mult4_to_1_32 mult2(out2, datab,extad,zextad, zextad, alusrc, noriControl);
 
 //mux with MemToReg control
-mult4_to_1_32 mult3(out3, sum,dpack,adder1out,adder1out,memtoreg,jmxorcORblezalORjalpc);
+mult4_to_1_32 mult3(out3, dpack,sum,adder1out,adder1out,memtoreg,jmxorcORblezalORjalpc); //data pack ve sum yer değiştirdim dpack i0 konumunda çünkü
 
 //mux with (Branch&ALUZero) control
 mult4_to_1_32 mult4(out4_1, adder1out,adder2out,sum, sum ,pcsrc0, pcsrc1);
 
 // mux for baln 
-mult2_to_1_32 mult6(out4, out4_1, labelAddress ,statusnANDbaln); // added LabelAddress
+mult2_to_1_32 mult6(out4, out4_1, pseudoAddress ,statusnANDbaln); // added LabelAddress
 
 // load pc
 always @(negedge clk)
@@ -170,12 +173,12 @@ adder add1(pc,32'h4,adder1out);
 adder add2(adder1out,sextad,adder2out);
 
 //Control unit
-control cont(instruc[31:26],instruc[5:0],regdest,alusrc,memtoreg,regwrite,memread,memwrite,branch,
+control cont(inst31_26,inst5_0,regdest,alusrc,memtoreg,regwrite,memread,memwrite,branch,
 aluop1,aluop0,brvControl,jmxorControl,jalpcControl,balnControl,blezalControl,noriControl);
 
 //Sign extend unit
-signext sext(instruc[15:0],extad);
-zeroext zext(instruc[15:0],zextad);
+signext sext(inst15_0,extad);
+zeroext zext(inst15_0,zextad);
 
 //ALU control unit
 alucont acont(aluop1,aluop0,instruc[5],instruc[4],instruc[3],instruc[2], instruc[1], instruc[0] ,gout);
@@ -189,7 +192,7 @@ shift shift2(sextad,extad);
 //read initial data from files given in hex
 initial
 begin
-$readmemh("initDm.dat",datmem); //read Data Memory
+$readmemh("initDM.dat",datmem); //read Data Memory
 $readmemh("initIM.dat",mem);//read Instruction Memory
 $readmemh("initReg.dat",registerfile);//read Register File
 
