@@ -204,7 +204,6 @@ end
 initial
 begin
 pc=0;
-#400 $finish;
 	
 end
 initial
@@ -218,7 +217,22 @@ begin
 
   $monitor($time,"PC %h",pc,"  SUM %h",sum,"   INST %h",instruc[31:0],
 "   REGISTER %h %h %h %h ",registerfile[4],registerfile[5], registerfile[6],registerfile[1] );
-
+end
+initial
+begin
+	#400    
+    $display("Data Memory Content:");
+    for (i = 0; i < 32; i = i + 1) begin
+        $display("datmem[%0d] = %h", i, datmem[i]);
+    end
+    
+    $display("Register File Content:");
+    for (i = 0; i < 32; i = i + 1) begin
+        $display("registerfile[%0d] = %h", i, registerfile[i]);
+    end
+	$writememh("finalDM.dat",datmem); //write Data Memory
+	$writememh("finalReg.dat",registerfile); //write Register File
+	$finish;
 end
 endmodule
 
