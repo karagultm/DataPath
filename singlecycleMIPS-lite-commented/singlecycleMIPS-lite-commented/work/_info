@@ -10,7 +10,7 @@ z2
 cModel Technology
 dC:/intelFPGA/20.1
 vadder
-Z0 !s110 1716629769
+Z0 !s110 1716635210
 !i10b 1
 !s100 Y;`Fz?LjC0QzPeNWf8_U<1
 I_EMQJPm2_R412Om[;D3:g0
@@ -24,7 +24,7 @@ Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1716629769.000000
+Z4 !s108 1716635210.000000
 !s107 C:/GitHub/University/DataPath---CSE-3038-Project/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/adder.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/GitHub/University/DataPath---CSE-3038-Project/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/adder.v|
 !i113 1
@@ -178,13 +178,13 @@ R4
 R5
 R6
 vprocessor
-Z7 !s110 1716629770
+R0
 !i10b 1
-!s100 53hJXMBWKGZSLlAMTU=@e1
-ISzIV4AHKoKGa@Yd=X_@G=2
+!s100 QKzT=9okff4jE_YEf4]Th0
+IhQ]JJzNQ;;cnnAMo_DM2>1
 R1
 R2
-w1716624946
+w1716635201
 8C:/GitHub/University/DataPath---CSE-3038-Project/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v
 FC:/GitHub/University/DataPath---CSE-3038-Project/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v
 L0 1
@@ -199,7 +199,7 @@ R4
 R5
 R6
 vshift
-R7
+R0
 !i10b 1
 !s100 GWP55OEfIRVA_6M>iSY8d2
 I4T^BGE:m9aceQkYVI7Ade2
@@ -213,14 +213,14 @@ R3
 r1
 !s85 0
 31
-Z8 !s108 1716629770.000000
+R4
 !s107 C:/GitHub/University/DataPath---CSE-3038-Project/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/shift.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/GitHub/University/DataPath---CSE-3038-Project/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/shift.v|
 !i113 1
 R5
 R6
 vsignext
-R7
+R0
 !i10b 1
 !s100 JAEfRFLIAaX=@V<j@h[jS1
 ITR39EcUPan>n]RRR]:?fL1
@@ -234,14 +234,14 @@ R3
 r1
 !s85 0
 31
-R8
+R4
 !s107 C:/GitHub/University/DataPath---CSE-3038-Project/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/signext.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/GitHub/University/DataPath---CSE-3038-Project/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/signext.v|
 !i113 1
 R5
 R6
 vzeroext
-R7
+R0
 !i10b 1
 !s100 _[ZN>@8YhJ[;N>L;R0VG^2
 IUCZkG^8lQ?:Y`7D[BCPIL0
@@ -255,7 +255,7 @@ R3
 r1
 !s85 0
 31
-R8
+R4
 !s107 C:/GitHub/University/DataPath---CSE-3038-Project/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/zeroext.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/GitHub/University/DataPath---CSE-3038-Project/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/zeroext.v|
 !i113 1

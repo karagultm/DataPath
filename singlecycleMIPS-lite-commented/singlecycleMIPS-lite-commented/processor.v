@@ -149,7 +149,7 @@ mult2_to_1_5 mult5(out1, out1_1, twentyfive, blezalControl);
 mult4_to_1_32 mult2(out2, datab,extad,zextad, zextad, alusrc, noriControl);
 
 //mux with MemToReg control
-mult4_to_1_32 mult3(out3, dpack,sum,adder1out,adder1out,memtoreg,jmxorcORblezalORjalpc); //data pack ve sum yer değiştirdim dpack i0 konumunda çünkü
+mult4_to_1_32 mult3(out3, sum,dpack,adder1out,adder1out,memtoreg,jmxorcORblezalORjalpc); //data pack ve sum yer değiştirdim dpack i0 konumunda çünkü
 
 //mux with (Branch&ALUZero) control
 mult4_to_1_32 mult4(out4_1, adder1out,adder2out,sum, sum ,pcsrc0, pcsrc1);
@@ -215,8 +215,10 @@ forever #20  clk=~clk;
 end
 initial 
 begin
+
   $monitor($time,"PC %h",pc,"  SUM %h",sum,"   INST %h",instruc[31:0],
 "   REGISTER %h %h %h %h ",registerfile[4],registerfile[5], registerfile[6],registerfile[1] );
+
 end
 endmodule
 
