@@ -1,6 +1,7 @@
-module alu32(sum,a,b,zout,gin, statusN,statusV,statusZ,clk);//ALU operation according to the ALU control line values
+module alu32(sum,a,b,zout,gin, statusN,statusV,statusZ,clk,nORv);//ALU operation according to the ALU control line values
 
 output [31:0] sum;
+output nORv;
 
 input [31:0] a,b; 
 input [3:0] gin;//ALU control line
@@ -10,7 +11,8 @@ reg [31:0] sum;
 reg [31:0] less;
 
 output zout;
-reg zout;
+reg zout, nORv;
+reg nORv_1;
 
 output reg statusZ, statusN, statusV;
 reg tempZ, tempN, tempV;
@@ -21,7 +23,7 @@ begin
     tempZ = 0;
     tempN = 0;
     tempV = 0;
-
+    nORv_1 = 0;
     case(gin)
     4'b0010: begin
         sum=a+b;         //ALU control line=0010, ADD
@@ -37,7 +39,11 @@ begin
         else sum=0;
         end
     4'b1111: begin
-        if (a[31] || a == 0) sum = a; //ALU control line=1111, pass through
+        if (a[31] || a == 0) 
+        begin
+            sum = a; //ALU control line=1111, pass through
+            nORv_1 = 1;
+        end
         else sum = 1;
         end 
 
@@ -54,6 +60,7 @@ begin
     tempN = sum[31];
 
 zout=~(|sum);
+nORv = nORv_1;
 end
 
 always @(posedge clk) begin

@@ -37,28 +37,28 @@ wire zout,	//Zero output of ALU
 
 //Control signals
 regdest,alusrc,memtoreg,regwrite,memread,memwrite,branch,aluop2,aluop1,aluop0,
-noriControl, blezalControl, balnControl, jalpcControl, brvControl, jmxorControl; // new instruction controls
+noriControl, blezalControl, balnControl, jalpcControl, brvControl, jmxorControl,nORv; // new instruction controls
 
 reg statusN, statusV, statusZ;	//Status bits
 // jmxorControl or balnControl
 wire jmxorcORbalnc;
 assign jmxorcORbalnc = jmxorControl || balnControl;
-
+wire blezalANDnorv;
 //jmxorrControl or blezalControl or jalpcControl
 wire jmxorcORblezalORjalpcORbaln;
-assign jmxorcORblezalORjalpcORbaln = jmxorControl || blezalControl || jalpcControl || balnControl;
+assign jmxorcORblezalORjalpcORbaln = jmxorControl || blezalANDnorv || jalpcControl || balnControl;
 
 //statusV and brvControl
 wire statusvANDbrv;
 assign statusvANDbrv = statusV && brvControl;
 
 // blezal and sum check
-wire blezalANDsum;
-assign blezalANDsum = blezalControl && ~sum[0];
+
+assign blezalANDnorv = blezalControl && nORv;
 
 //jmxor or statusvANDbrv
 wire pcsrc1;
-assign pcsrc1= jmxorControl || statusvANDbrv || blezalANDsum;
+assign pcsrc1= jmxorControl || statusvANDbrv ;
 
 
 
@@ -69,7 +69,7 @@ assign branchANDzout=branch && zout;
 
 //branchandzout or jalpcControl
 wire pcsrc0;
-assign pcsrc0 = branchANDzout || jalpcControl;
+assign pcsrc0 = branchANDzout || jalpcControl || blezalANDnorv;
 
 //statusn and balnControl
 wire statusnANDbaln;
@@ -144,7 +144,7 @@ mult4_to_1_5  mult1(out1_1, inst20_16,inst15_11,thirtyone,thirtyone,regdest,jmxo
 //mux blezalControl 
 wire [4:0] twentyfive;
 assign twentyfive=5'b11001;
-mult2_to_1_5 mult5(out1, out1_1, twentyfive, blezalControl);
+mult2_to_1_5 mult5(out1, out1_1, twentyfive, blezalANDnorv);
 
 //mux with ALUSrc control
 mult4_to_1_32 mult2(out2, datab,extad,zextad, zextad, alusrc, noriControl);
@@ -165,7 +165,7 @@ pc=out4;
 
 wire statusN_t, statusV_t, statusZ_t;
 //ALU unit
-alu32 alu1(sum,dataa,out2,zout,gout, statusN_t,statusV_t,statusZ_t,clk);
+alu32 alu1(sum,dataa,out2,zout,gout, statusN_t,statusV_t,statusZ_t,clk,nORv);
 
 always @(negedge clk)
 begin
