@@ -1,8 +1,8 @@
-module control(in,func,regdest,alusrc,memtoreg,regwrite,memread,memwrite,branch,aluop1,aluop2,brvControl,jmxorControl,jalpcControl,balnControl,blezalControl,noriControl); //Added our new output signals
+module control(in,func,regdest,alusrc,memtoreg,regwrite,memread,memwrite,branch,aluop1,aluop2,aluop3,brvControl,jmxorControl,jalpcControl,balnControl,blezalControl,noriControl); //Added our new output signals
 input [5:0] in; 
 input [5:0] func; 
 
-output regdest,alusrc,memtoreg,regwrite,memread,memwrite,branch,aluop1,aluop2;
+output regdest,alusrc,memtoreg,regwrite,memread,memwrite,branch,aluop1,aluop2,aluop3;
 output brvControl,jmxorControl,jalpcControl,balnControl,blezalControl,noriControl; //Added our new output signals
 
 wire rformat,lw,sw,beq;
@@ -29,6 +29,7 @@ assign memwrite=sw;
 assign branch=beq;
 assign aluop1=rformat|nori|brv|jmxor; //nori,brv,jmxor added to aluop1
 assign aluop2=beq|nori;
+assign aluop3=blezal;
 assign noriControl=nori;
 assign blezalControl=blezal; 
 assign jalpcControl=jalpc;

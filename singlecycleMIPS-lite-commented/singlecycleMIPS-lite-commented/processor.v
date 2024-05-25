@@ -36,7 +36,7 @@ wire [25:0] j_type_address; //J type address
 wire zout,	//Zero output of ALU
 
 //Control signals
-regdest,alusrc,memtoreg,regwrite,memread,memwrite,branch,aluop1,aluop0,
+regdest,alusrc,memtoreg,regwrite,memread,memwrite,branch,aluop2,aluop1,aluop0,
 noriControl, blezalControl, balnControl, jalpcControl, brvControl, jmxorControl; // new instruction controls
 
 reg statusN, statusV, statusZ;	//Status bits
@@ -182,15 +182,15 @@ adder add1(pc,32'h4,adder1out);
 adder add2(adder1out,sextad,adder2out);
 
 //Control unit
-control cont(inst31_26,inst5_0,regdest,alusrc,memtoreg,regwrite,memread,memwrite,branch,
-aluop1,aluop0,brvControl,jmxorControl,jalpcControl,balnControl,blezalControl,noriControl);
+control cont(inst31_26,inst5_0,regdest,alusrc,memtoreg,regwrite,memread,memwrite,branch,aluop0
+aluop1,aluop2,brvControl,jmxorControl,jalpcControl,balnControl,blezalControl,noriControl);
 
 //Sign extend unit
 signext sext(inst15_0,extad);
 zeroext zext(inst15_0,zextad);
 
 //ALU control unit
-alucont acont(aluop1,aluop0,instruc[5],instruc[4],instruc[3],instruc[2], instruc[1], instruc[0] ,gout);
+alucont acont(aluop2,aluop1,aluop0,instruc[5],instruc[4],instruc[3],instruc[2], instruc[1], instruc[0] ,gout);
 
 //Shift-left 2 unit
 shift shift2(sextad,extad);
