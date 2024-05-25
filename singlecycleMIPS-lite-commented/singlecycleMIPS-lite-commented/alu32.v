@@ -26,6 +26,7 @@ begin
     4'b0010: begin
         sum=a+b;         //ALU control line=0010, ADD
 		if ((a[31]&b[31]&(~sum[31]) )| ((~a[31])&(~b[31])&(sum[31]))) tempV=1;
+        if (sum < a | sum < b) tempV=1;
         end
     4'b0110: begin
         sum=a+1+(~b);    //ALU control line=0110, SUB
@@ -51,8 +52,7 @@ begin
 zout=~(|sum);
 end
 
-always @(negedge clk) //nededge yapıldı çünkü status flagler sadece clockun negatif kenarında güncellenmeli bu sayede önceki instructionları tutabilecekler 
-begin
+always @(posedge clk) begin
 	 // Update status flags at the positive edge of the clock
     statusZ <= tempZ;
     statusN <= tempN;
