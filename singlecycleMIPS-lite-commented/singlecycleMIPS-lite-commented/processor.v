@@ -182,7 +182,7 @@ adder add1(pc,32'h4,adder1out);
 adder add2(adder1out,sextad,adder2out);
 
 //Control unit
-control cont(inst31_26,inst5_0,regdest,alusrc,memtoreg,regwrite,memread,memwrite,branch,aluop0
+control cont(inst31_26,inst5_0,regdest,alusrc,memtoreg,regwrite,memread,memwrite,branch,aluop0,
 aluop1,aluop2,brvControl,jmxorControl,jalpcControl,balnControl,blezalControl,noriControl);
 
 //Sign extend unit
