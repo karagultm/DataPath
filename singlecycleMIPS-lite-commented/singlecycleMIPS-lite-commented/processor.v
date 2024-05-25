@@ -25,7 +25,7 @@ out1_1,     //first mux regdest and jmxorControl or balnControl
 out1;		//Write data input of Register File
 
 wire [15:0] inst15_0;	//15-0 bits of instruction LABEL
-
+wire [25:0] inst25_0;	//25-0 bits of instruction LABEL
 wire [31:0] instruc,	//current instruction
 dpack;	//Read data output of memory (data read from memory)
 
@@ -44,8 +44,8 @@ wire jmxorcORbalnc;
 assign jmxorcORbalnc = jmxorControl || balnControl;
 
 //jmxorrControl or blezalControl or jalpcControl
-wire jmxorcORblezalORjalpc;
-assign jmxorcORblezalORjalpc = jmxorControl || blezalControl || jalpcControl;
+wire jmxorcORblezalORjalpcORbaln;
+assign jmxorcORblezalORjalpcORbaln = jmxorControl || blezalControl || jalpcControl || balnControl;
 
 //statusz or statusn
 wire statuszORstatusn;
@@ -105,6 +105,7 @@ end
  assign inst15_11=instruc[15:11];
  assign inst15_0=instruc[15:0];
  assign inst5_0=instruc[5:0];
+ assign inst25_0=instruc[25:0];
 
 
 // Baln operation
@@ -117,7 +118,7 @@ wire [31:0] pseudoAddress;
 wire [27:0] extendedLabelAddress;
 
 assign first4BitsOfPC = adder1out[31:28];
-assign extendedLabelAddress = {pseudoAddress, 2'b00}; //shift left 2
+assign extendedLabelAddress = {inst25_0, 2'b00}; //shift left 2
 assign pseudoAddress = {first4BitsOfPC,extendedLabelAddress}; 	//pcnin ilk 4 biti ile labelin 28 biti concatene ediliyor
 
 
@@ -149,7 +150,7 @@ mult2_to_1_5 mult5(out1, out1_1, twentyfive, blezalControl);
 mult4_to_1_32 mult2(out2, datab,extad,zextad, zextad, alusrc, noriControl);
 
 //mux with MemToReg control
-mult4_to_1_32 mult3(out3, sum,dpack,adder1out,adder1out,memtoreg,jmxorcORblezalORjalpc); //data pack ve sum yer değiştirdim dpack i0 konumunda çünkü
+mult4_to_1_32 mult3(out3, sum,dpack,adder1out,adder1out,memtoreg,jmxorcORblezalORjalpcORbaln); //data pack ve sum yer değiştirdim dpack i0 konumunda çünkü
 
 //mux with (Branch&ALUZero) control
 mult4_to_1_32 mult4(out4_1, adder1out,adder2out,sum, sum ,pcsrc0, pcsrc1);
@@ -160,9 +161,7 @@ mult2_to_1_32 mult6(out4, out4_1, pseudoAddress ,statusnANDbaln); // added Label
 // load pc
 always @(negedge clk)
 pc=out4;
-
 // alu, adder and control logic connections
-
 //ALU unit
 alu32 alu1(sum,dataa,out2,zout,gout, statusN,statusV,statusZ,clk);
 
