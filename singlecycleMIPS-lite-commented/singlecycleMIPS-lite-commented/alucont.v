@@ -8,10 +8,10 @@ reg [3:0] gout;
 always @(aluop2 or aluop1 or aluop0 or f5 or f4 or f3 or f2 or f1 or f0)
 begin
 if(aluop2) gout = 4'b1111;
-if(~(aluop1|aluop0))  gout=4'b0010;
-if(aluop0)gout=4'b0110; //aluop 01
-if(aluop0&aluop1)gout=4'b1010; //aluop 11 - nori 
-if(aluop1)//R-type //aluop 10
+if(~aluop2 & ~aluop1 & ~aluop0)  gout=4'b0010;
+if(~aluop2 & ~aluop1 & aluop0)gout=4'b0110; //aluop 01
+if(~aluop2 & aluop1 & aluop0)gout=4'b1010; //aluop 11 - nori 
+if(~aluop2 & aluop1 & ~aluop0)//R-type //aluop 10
 begin
 	if (f5&(~(f4|f3|f2|f1|f0)))gout=4'b0010; 	//function code=0000,ALU control=010 (add)
 	if ((f5)&(~f4)&(~f3)&(~f2)&(f1)&(~f0))gout=4'b0110;		//function code=0x10,ALU control=110 (sub)

@@ -38,7 +38,7 @@ begin
         end
     4'b1111: begin
         if (a[31] || a == 0) sum = a; //ALU control line=1111, pass through
-        else sum = 0;
+        else sum = 1;
         end 
 
     4'b0000: sum=a & b;    //ALU control line=0000, AND 

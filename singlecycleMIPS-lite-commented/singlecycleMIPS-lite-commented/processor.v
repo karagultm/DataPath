@@ -52,9 +52,16 @@ assign jmxorcORblezalORjalpcORbaln = jmxorControl || blezalControl || jalpcContr
 wire statusvANDbrv;
 assign statusvANDbrv = statusV && brvControl;
 
+// blezal and sum check
+wire blezalANDsum;
+assign blezalANDsum = blezalControl && ~sum[0];
+
 //jmxor or statusvANDbrv
 wire pcsrc1;
-assign pcsrc1= jmxorControl || statusvANDbrv;
+assign pcsrc1= jmxorControl || statusvANDbrv || blezalANDsum;
+
+
+
 
 //branch and zout
 wire branchANDzout;
@@ -62,7 +69,7 @@ assign branchANDzout=branch && zout;
 
 //branchandzout or jalpcControl
 wire pcsrc0;
-assign pcsrc0 = branchANDzout || jalpcControl || blezalControl;
+assign pcsrc0 = branchANDzout || jalpcControl;
 
 //statusn and balnControl
 wire statusnANDbaln;
