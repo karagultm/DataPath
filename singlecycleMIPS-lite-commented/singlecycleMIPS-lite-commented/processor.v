@@ -34,11 +34,12 @@ wire [3:0] gout;	//Output of ALU control unit
 wire [25:0] j_type_address; //J type address
 
 wire zout,	//Zero output of ALU
-statusZ, statusV, statusN, //status reg flags
+
 //Control signals
 regdest,alusrc,memtoreg,regwrite,memread,memwrite,branch,aluop1,aluop0,
 noriControl, blezalControl, balnControl, jalpcControl, brvControl, jmxorControl; // new instruction controls
 
+reg statusN, statusV, statusZ;	//Status bits
 // jmxorControl or balnControl
 wire jmxorcORbalnc;
 assign jmxorcORbalnc = jmxorControl || balnControl;
@@ -162,8 +163,17 @@ mult2_to_1_32 mult6(out4, out4_1, pseudoAddress ,statusnANDbaln); // added Label
 always @(negedge clk)
 pc=out4;
 // alu, adder and control logic connections
+
+wire statusN_t, statusV_t, statusZ_t;
 //ALU unit
-alu32 alu1(sum,dataa,out2,zout,gout, statusN,statusV,statusZ,clk);
+alu32 alu1(sum,dataa,out2,zout,gout, statusN_t,statusV_t,statusZ_t,clk);
+
+always @(negedge clk)
+begin
+statusN = statusN_t;
+statusV = statusV_t;
+statusZ = statusZ_t;
+end
 
 //adder which adds PC and 4
 adder add1(pc,32'h4,adder1out);

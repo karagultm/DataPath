@@ -51,7 +51,7 @@ begin
 zout=~(|sum);
 end
 
-always @(negedge clk) begin
+always @(posedge clk) begin
 	 // Update status flags at the positive edge of the clock
     statusZ = tempZ;
     statusN = tempN;
