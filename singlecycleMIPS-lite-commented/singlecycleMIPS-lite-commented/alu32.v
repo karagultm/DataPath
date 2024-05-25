@@ -36,6 +36,11 @@ begin
         if (less[31]) sum=1;
         else sum=0;
         end
+    4'b1111: begin
+        if (a[31] || a == 0) sum = a; //ALU control line=1111, pass through
+        else sum = 0;
+        end 
+
     4'b0000: sum=a & b;    //ALU control line=0000, AND 
     4'b0001: sum=a|b;        //ALU control line=0001, OR
     4'b1010: sum=~(a | b); // ALU control line=1010, NOR	- nori

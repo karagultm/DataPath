@@ -48,14 +48,6 @@ assign jmxorcORbalnc = jmxorControl || balnControl;
 wire jmxorcORblezalORjalpcORbaln;
 assign jmxorcORblezalORjalpcORbaln = jmxorControl || blezalControl || jalpcControl || balnControl;
 
-//statusz or statusn
-wire statuszORstatusn;
-assign statuszORstatusn = statusZ || statusN;
-
-//blezalControl and statuszORstatusn
-wire blezalANDstatuszORstatusn;
-assign blezalANDstatuszORstatusn = blezalControl && statuszORstatusn;
-
 //statusV and brvControl
 wire statusvANDbrv;
 assign statusvANDbrv = statusV && brvControl;
@@ -68,9 +60,9 @@ assign pcsrc1= jmxorControl || statusvANDbrv;
 wire branchANDzout;
 assign branchANDzout=branch && zout; 
 
-//branchandzout or jalpcControl or blezalANDstatuszORstatusn
+//branchandzout or jalpcControl
 wire pcsrc0;
-assign pcsrc0 = branchANDzout || jalpcControl || blezalANDstatuszORstatusn;
+assign pcsrc0 = branchANDzout || jalpcControl || blezalControl;
 
 //statusn and balnControl
 wire statusnANDbaln;
