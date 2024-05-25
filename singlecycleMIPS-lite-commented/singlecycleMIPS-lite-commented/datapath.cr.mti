@@ -1,23 +1,16 @@
-C:/GitHub/University/DataPath---CSE-3038-Project/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult2_to_1_5.v {1 {vlog -work work -stats=none C:/GitHub/University/DataPath---CSE-3038-Project/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult2_to_1_5.v
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module mult2_to_1_5
-
-Top level modules:
-	mult2_to_1_5
-
-} {} {}} C:/GitHub/University/DataPath---CSE-3038-Project/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult2_to_1_32.v {1 {vlog -work work -stats=none C:/GitHub/University/DataPath---CSE-3038-Project/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult2_to_1_32.v
+C:/GitHub/University/DataPath---CSE-3038-Project/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult2_to_1_32.v {1 {vlog -work work -stats=none C:/GitHub/University/DataPath---CSE-3038-Project/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult2_to_1_32.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module mult2_to_1_32
 
 Top level modules:
 	mult2_to_1_32
 
-} {} {}} C:/GitHub/University/DataPath---CSE-3038-Project/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult4_to_1_5.v {1 {vlog -work work -stats=none C:/GitHub/University/DataPath---CSE-3038-Project/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult4_to_1_5.v
+} {} {}} C:/GitHub/University/DataPath---CSE-3038-Project/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult2_to_1_5.v {1 {vlog -work work -stats=none C:/GitHub/University/DataPath---CSE-3038-Project/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult2_to_1_5.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module mult4_to_1_5
+-- Compiling module mult2_to_1_5
 
 Top level modules:
-	mult4_to_1_5
+	mult2_to_1_5
 
 } {} {}} C:/GitHub/University/DataPath---CSE-3038-Project/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult4_to_1_32.v {1 {vlog -work work -stats=none C:/GitHub/University/DataPath---CSE-3038-Project/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult4_to_1_32.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
@@ -26,12 +19,12 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	mult4_to_1_32
 
-} {} {}} C:/GitHub/University/DataPath---CSE-3038-Project/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v {1 {vlog -work work -stats=none C:/GitHub/University/DataPath---CSE-3038-Project/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/processor.v
+} {} {}} C:/GitHub/University/DataPath---CSE-3038-Project/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult4_to_1_5.v {1 {vlog -work work -stats=none C:/GitHub/University/DataPath---CSE-3038-Project/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/mult4_to_1_5.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module processor
+-- Compiling module mult4_to_1_5
 
 Top level modules:
-	processor
+	mult4_to_1_5
 
 } {} {}} C:/GitHub/University/DataPath---CSE-3038-Project/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/adder.v {1 {vlog -work work -stats=none C:/GitHub/University/DataPath---CSE-3038-Project/singlecycleMIPS-lite-commented/singlecycleMIPS-lite-commented/adder.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016

@@ -16,7 +16,7 @@ adder1out,	//Output of adder which adds PC and 4-add1
 adder2out,	//Output of adder which adds PC+4 and 2 shifted sign-extend result-add2
 sextad;	//Output of shift left 2 unit
 
-wire [5:0] inst31_26;	//Opcode
+wire [5:0] inst31_26, inst5_0;	//Opcode
 wire [4:0] 
 inst25_21,	//RS
 inst20_16,	//RT
@@ -113,7 +113,7 @@ end
 //
 
 wire [3:0] first4BitsOfPC;
-wire [32:0] pseudoAddress;
+wire [31:0] pseudoAddress;
 wire [27:0] extendedLabelAddress;
 
 assign first4BitsOfPC = adder1out[31:28];
