@@ -66,17 +66,17 @@ For instance, consider the instruction 0x014B0021.
 
 $rs is $10
 
-$10: **	**0000 0000 0000 0000 0000 0000 0000 0010
+$10: 0000 0000 0000 0000 0000 0000 0000 0010
 
 $rt is $11
 
-$11: **	**0000 0000 0000 0000 0000 0000 0000 1000
+$11: 0000 0000 0000 0000 0000 0000 0000 1000
 
 Performing the XOR operation:
 
-$10  :**	**0000 0000 0000 0000 0000 0000 0000 0010
+$10  :0000 0000 0000 0000 0000 0000 0000 0010
 
-$11  :**	**0000 0000 0000 0000 0000 0000 0000 1000
+$11  :0000 0000 0000 0000 0000 0000 0000 1000
 
 ---
 
@@ -144,11 +144,11 @@ Total       :  0000 0000 0000 0000 0000 0000 0000 1100
 
 After determining the destination address we  go there by adding 4:
 
-Next PC:  0000 0000 0000 0000 0000 0000 0001 0000  **	**→ **	**0x00000010
+Next PC:  0000 0000 0000 0000 0000 0000 0001 0000  → 0x00000010
 
 And the previous address is stored in $rt register which in our case it’s $15 register and it’s content is
 
-PC+4**	**: 0000 0000 0000 0000 0000 0000 0000 1000   **	**→ **	**0x00000008
+PC+4: 0000 0000 0000 0000 0000 0000 0000 1000   → 0x00000008
 
 ![](https://lh7-us.googleusercontent.com/k3k-8tiHytlj9wnGIeM0EJfA5aEqZA-JfvKUP-kDtSsDc47sbGKE_g_haNCeG1TZMiBZWRk4w9ivbQlauimE15HI9JxMnfAwIUX-MfznUYcb2TR7jlnuTxhQjWiMptYv2IqMP36sDkX09bmItrxiI6o)![](https://lh7-us.googleusercontent.com/Nw7fAkK0AIZwck7I9tg188dyyD7YszgVDA8ftDotl3iAD7BDuGXEPJE7I1JaGPsQhHIvi8gyAq_svkCFv-nZ6AjfowZcIX5xZYmWmyzIanosI-R-WtYJZgja0baE5PCRsxSD5OLOoHcIkiplUgBU18E)
 
@@ -168,16 +168,16 @@ For instance,
 
 Let's consider the instruction with the hex code 0x91C00004.
 
-$14 (rs)**	**: 1000 0000 0000 0000 0000 0000 0000 → negative so instruction will jump to new address
+$14 (rs): 1000 0000 0000 0000 0000 0000 0000 → negative so instruction will jump to new address
 
-LABEL**	**: 0000 0000 0000 0000 0000 0000 0100
+LABEL: 0000 0000 0000 0000 0000 0000 0100
 
-PC+4**	**    : **	**0000 0000 0000 0000 0000 0000 1000 → 0x00000008 stored in $25 register
+PC+4    : 0000 0000 0000 0000 0000 0000 1000 → 0x00000008 stored in $25 register
 
-LABEL*4: **	**0000 0000 0000 0000 0000 0001 0000
+LABEL x 4: 0000 0000 0000 0000 0000 0001 0000
 ------------------------------------------------
 
-New PC : **	**0000 0000 0000 0000 0000 0001 1000  →  0x00000018
+New PC : 0000 0000 0000 0000 0000 0001 1000  →  0x00000018
 
 ![](https://lh7-us.googleusercontent.com/rt2G6COZfKNw3riRsUJXiv36AxUZRxKDl7_JwTY0RqVgspmBev50MM03d8e-0TfEZ50YFvktXnNEgKM1ms9BMqE5TuaQEBLKwSC4oDs5G7a00HSLeAVTNXeQN__dcnrlsyS9gWTGIeQA1uGoryQhDFQ)![](https://lh7-us.googleusercontent.com/iAgpDeRmCcGlUuqnHAfgIzgXuLtsl1rVTkfnYIAi87Jd4aWacJDDbAYLA5Z5-dCt90gxtJwnCi8_kNKNNQtsgdj-IkS857T_Tks987zjkN7kzE4U6dv0jw0MQGb6QE_d5XECH2Nr4B7Fitt8uow3840)
 
@@ -185,11 +185,11 @@ New PC : **	**0000 0000 0000 0000 0000 0001 1000  →  0x00000018
 
 Let's consider the instruction with the hex code 0x91400004.
 
-$10 (rs)**	**: 0000 0000 0000 0000 0000 0000 0002 → positive so instruction will not jump to new address
+$10 (rs)	: 0000 0000 0000 0000 0000 0000 0002 → positive so instruction will not jump to new address
 
-LABEL**	**: 0000 0000 0000 0000 0000 0000 0100
+LABEL	: 0000 0000 0000 0000 0000 0000 0100
 
-PC+4**	**    : **	**0000 0000 0000 0000 0000 0000 1000 → 0x00000008 (nothing change)
+PC+4	    : 	0000 0000 0000 0000 0000 0000 1000 → 0x00000008 (nothing change)
 
 ![](https://lh7-us.googleusercontent.com/Dsmcx5ociTem1tVhDPG2Tedv5dVfECjIbuCjjZQeN0YnvDTbB3yY_WSvmoxDebuHoTnKhx-XmSUgeL0IuQ1i15NBmf89ea_yUgqRkQANxORSzfJW7Q2AigQryiiEsE8HkwdE_aLIc74p6WXNpRT54yU)![](https://lh7-us.googleusercontent.com/1H_9YIPhlSY2ZxzJY56A2FFsjJXAqvrMJwY3QbhL2ak64amJciz5AEMRWspkOYHMytTLYIJQlCap4YH_-WqtbhhNVQi2wokh0-cIuwnJvAYNia1bZALsDh4Ret6Pw-AVj955u74me6XrR8gRnip4n5U)
 
@@ -197,24 +197,24 @@ PC+4**	**    : **	**0000 0000 0000 0000 0000 0000 1000 → 0x00000008 (nothing c
 
 Let's consider the instruction with the hex code 0x91800004.
 
-$12 (rs)**	**: 0000 0000 0000 0000 0000 0000 0000 → zero so instruction will jump to new address
+$12 (rs): 0000 0000 0000 0000 0000 0000 0000 → zero so instruction will jump to new address
 
-LABEL**	**: 0000 0000 0000 0000 0000 0000 0100
+LABEL: 0000 0000 0000 0000 0000 0000 0100
 
-PC+4**	**    : **	**0000 0000 0000 0000 0000 0000 1000 → 0x00000008 stored in $25 register
+PC+4    : 0000 0000 0000 0000 0000 0000 1000 → 0x00000008 stored in $25 register
 
-LABEL*4: **	**0000 0000 0000 0000 0000 0001 0000
+LABEL x 4: 0000 0000 0000 0000 0000 0001 0000
 ------------------------------------------------
 
-New PC : **	**0000 0000 0000 0000 0000 0001 1000  →  0x00000018
+New PC : 0000 0000 0000 0000 0000 0001 1000  →  0x00000018
 
 ![](https://lh7-us.googleusercontent.com/L1f0XHQzs-jhcwCsJ5N4fQ0-JIbu1gX-A50EYNeVgnJv4ZOqZ8VrIs3i64M1jvYr4fc80KhzF8Jicp55ZFNH8os-9sM4PGVVkEqn28_-Ebz6VL1ap38qRN8GNx8X7DssJx-sOXjNnRilQvKv9unQtP0)![](https://lh7-us.googleusercontent.com/88qOgpxVr9TqSU3csKjdvHaQ5qD3fGMXyB_i8RfrFIoiXg_3geWYq4iheT76sGKa0ITMyXFw2X4dc5XNGqfRKK-esIbqgEdI86Q9G83CDHAClWzoHuV8RxBd6mS2qAbkPNdm8dMX07fi6zAuuKwCa-Q)
 
 ## BALN
 
-First Instruction: **	**01c07020 → add $14, $14, $0
+First Instruction: 01c07020 → add $14, $14, $0
 
-Second Instruction: **	**6c000005 → baln 0x000005
+Second Instruction: 6c000005 → baln 0x000005
 
 The "baln" instruction functions similarly to the "jal" instruction but with a condition. If the status flag [N] is set to 1, indicating a negative result from a previous operation, the program branches to a pseudo-direct address, similar to how "jal" operates. Additionally, the address of the instruction following the branch is stored in register 31.
 
@@ -224,17 +224,17 @@ Register $14 contains a value of 0x80000000, which is a negative value. Since $0
 
 The program then branches to a pseudo-direct address calculated by concatenating the PC incremented by 4 and the extended label, resulting in a new PC value:
 
-PC+4**	**    : **	**0000 0000 0000 0000 0000 0000 1000 → first 4 bit ⇒ 0000
+PC+4    : 0000 0000 0000 0000 0000 0000 1000 → first 4 bit ⇒ 0000
 
 (0x00000008 stored in $31 register)
 
-Label        : **	**0000 0000 0000 0000 0101
+Label        : 0000 0000 0000 0000 0101
 
 Extended label: 0000 0000 0000 0000 0101 00
 
 ---
 
-New PC   : **	**0000 0000  0000 0000 0001 0100 → 000014
+New PC   : 0000 0000  0000 0000 0001 0100 → 000014
 
 ![](https://lh7-us.googleusercontent.com/1kqmXpgg2Y3nbjaCVnsDMLv5o2ABHWWrXMVCIjdlAODTbLSjAiFqNQfdYmi5GF3AytF3SRC5NG3Xdl2BKVxHkDqWaHleYVeg5Uj6VcKU4xaHYbxuoNfsrfKM-hcYDuKo7BRXPeysj33R6mS82V9FTD0)![](https://lh7-us.googleusercontent.com/X34sg7iBZA2sRh9jrEvOgR_5rbmi3aF6QZ7AgxdfyG7z5YV_4ZmW9BXZaqZ3XC8qkMnP4PkGjGfXBYsNtGT8xJnWmS9mf6BFwS0wlaSOM8s9pyBKMJM3_VdeoAQf1_hXTADLhVXsyfEHpPy5p9IkrWs)
 
